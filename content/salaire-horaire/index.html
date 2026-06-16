@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salaire Horaire | Calculer un Taux Horaire Gratuitement</title>
+  <meta name="description" content="Calculez votre salaire horaire estimé à partir d’un salaire mensuel et d’un nombre d’heures par semaine.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="canonical" href="https://calculheure.fr/salaire-horaire/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Salaire Horaire | Calculer un Taux Horaire Gratuitement">
+  <meta property="og:description" content="Calculez votre salaire horaire estimé à partir d’un salaire mensuel et d’un nombre d’heures par semaine.">
+  <meta property="og:url" content="https://calculheure.fr/salaire-horaire/">
+  <meta property="og:site_name" content="CalcHeure">
+  <meta property="og:image" content="https://calculheure.fr/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Salaire Horaire | Calculer un Taux Horaire Gratuitement">
+  <meta name="twitter:description" content="Calculez votre salaire horaire estimé à partir d’un salaire mensuel et d’un nombre d’heures par semaine.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css">
+  
+</head>
+<body>
+<a class="skip-link" href="#main-content">Aller au contenu principal</a>
+<header class="site-header">
+  <div class="nav-inner">
+    <div class="logo"><a href="/">⏱ CalcHeure</a></div>
+    <nav class="desktop-nav" aria-label="Navigation principale">
+      <a href="/#calculator" class="">Calculatrice</a>
+<a href="/#outils" class="active">Outils</a>
+<a href="/blog/" class="">Articles</a>
+<a href="/a-propos/" class="">À propos</a>
+<a href="/#faq" class="">FAQ</a>
+      <a href="/#calculator" class="nav-cta">Calculer →</a>
+    </nav>
+    <button class="theme-btn" onclick="toggleTheme()" aria-label="Changer de thème" id="theme-btn">☀️</button>
+    <button class="hamburger" onclick="toggleMobileNav()" aria-label="Menu" aria-expanded="false" id="hamburger">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile">
+    <a href="/#calculator" onclick="closeMobileNav()" class="">Calculatrice</a>
+<a href="/#outils" onclick="closeMobileNav()" class="active">Outils</a>
+<a href="/blog/" onclick="closeMobileNav()" class="">Articles</a>
+<a href="/a-propos/" onclick="closeMobileNav()" class="">À propos</a>
+<a href="/#faq" onclick="closeMobileNav()" class="">FAQ</a>
+  </nav>
+</header>
+<main id="main-content">
+
+<div class="hero narrow">
+  <span class="hero-eyebrow">Outil paie</span>
+  <h1><span>Salaire horaire</span> à partir du salaire mensuel</h1>
+  <p>Estimez votre taux horaire brut ou net à partir de votre salaire mensuel et de votre durée de travail hebdomadaire.</p>
+</div>
+<section class="section-compact">
+  <div class="calc-box">
+    <div class="calc-panel active">
+      <p class="panel-title">Calcul du taux horaire</p>
+      <div class="form-grid">
+        <div class="field-group"><label for="salary-month">Salaire mensuel en €</label><input type="number" id="salary-month" min="0" step="0.01" placeholder="Ex. 2000"></div>
+        <div class="field-group"><label for="salary-hours">Heures par semaine</label><input type="number" id="salary-hours" min="1" step="0.01" value="35"></div>
+      </div>
+      <div class="calc-actions"><button class="btn-calc" data-label="Calculer le taux horaire" onclick="calcHourlySalary(event)">Calculer le taux horaire</button></div>
+      <div class="result-box" id="salary-result">
+        <div class="result-label">Taux horaire estimé</div>
+        <div class="result-main" id="salary-result-main">–</div>
+        <div class="result-sub" id="salary-result-sub"></div>
+      </div>
+    </div>
+  </div>
+</section>
+<section>
+  <div class="article-content">
+    <h2>Comment le calcul est fait</h2>
+    <p>La formule utilisée est : salaire mensuel ÷ heures mensuelles estimées. Les heures mensuelles sont calculées avec la formule heures hebdomadaires × 52 ÷ 12.</p>
+    <p>Ce résultat reste une estimation. Pour un bulletin de salaire officiel, il faut tenir compte du contrat, des primes, des cotisations et des règles applicables.</p>
+    <div class="author-box">
+  <div class="author-avatar">⏱</div>
+  <div>
+    <div class="author-name">Rédaction CalcHeure</div>
+    <div class="author-role">Contenu pratique sur le calcul des durées, les conversions et l’organisation du temps.</div>
+  </div>
+</div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo"><a href="/">⏱ CalcHeure</a></div>
+      <p>Calculatrice heure en ligne gratuite pour additionner, soustraire, convertir et mieux comprendre les durées.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Outils</h4>
+      <ul><li><a href="/">Calcul heure</a></li>
+<li><a href="/calcul-heures-travail/">Calcul heures de travail</a></li>
+<li><a href="/convertisseur-minutes-heures/">Convertisseur minutes heures</a></li>
+<li><a href="/salaire-horaire/">Salaire horaire</a></li>
+<li><a href="/difference-entre-deux-dates/">Différence entre deux dates</a></li>
+<li><a href="/feuille-de-presence/">Feuille de présence</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>Articles</h4>
+      <ul><li><a href="/blog/calcul-heures-travail/">Calcul des heures de travail</a></li>
+<li><a href="/blog/convertir-minutes-heures/">Convertir minutes en heures</a></li>
+<li><a href="/blog/gestion-du-temps-freelance/">Gestion du temps freelance</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>Confiance</h4>
+      <ul>
+        <li><a href="/a-propos/">À propos</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/politique-confidentialite/">Confidentialité</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Monétisation</h4>
+      <ul>
+        <li><a href="/#annonces">Emplacements publicitaires</a></li>
+        <li><a href="/#faq">Questions fréquentes</a></li>
+        <li><a href="/blog/">Guides SEO</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 CalcHeure — Calculatrice heure gratuite. Tous droits réservés.</p>
+    <div class="footer-links">
+      <a href="/politique-confidentialite/">Confidentialité</a>
+      <a href="/contact/">Contact</a>
+      <a href="/sitemap.xml">Plan du site</a>
+    </div>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/assets/js/app.js" defer></script>
+</body>
+</html>
