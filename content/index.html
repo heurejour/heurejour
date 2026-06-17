@@ -1,521 +1,57 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calcul Heure | Calculatrice Heure Gratuite en Ligne</title>
-  <meta name="description" content="Calcul heure gratuit : additionnez, soustrayez et convertissez heures, minutes et secondes. Outil mobile, rapide et sans inscription.">
-  <meta name="robots" content="index,follow">
-  <meta name="theme-color" content="#0d1117">
-  <link rel="canonical" href="https://calculheure.fr/">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Calcul Heure | Calculatrice Heure Gratuite en Ligne">
-  <meta property="og:description" content="Calcul heure gratuit : additionnez, soustrayez et convertissez heures, minutes et secondes. Outil mobile, rapide et sans inscription.">
-  <meta property="og:url" content="https://calculheure.fr/">
-  <meta property="og:site_name" content="CalcHeure">
-  <meta property="og:image" content="https://calculheure.fr/og-image.png">
-  <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Calcul Heure | Calculatrice Heure Gratuite en Ligne">
-  <meta name="twitter:description" content="Calcul heure gratuit : additionnez, soustrayez et convertissez heures, minutes et secondes. Outil mobile, rapide et sans inscription.">
-  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap">
-  <link rel="stylesheet" href="/assets/css/style.css">
-  
-  <script type="application/ld+json">
-  {
-  "@context": "https://schema.org",
-  "@graph": [
-    {
-      "@type": "WebApplication",
-      "name": "CalcHeure – Calcul Heure",
-      "url": "https://calculheure.fr/",
-      "description": "Calculatrice heure gratuite pour additionner, soustraire et convertir des durées.",
-      "applicationCategory": "UtilitiesApplication",
-      "operatingSystem": "Any",
-      "offers": {
-        "@type": "Offer",
-        "price": "0",
-        "priceCurrency": "EUR"
-      }
-    },
-    {
-      "@type": "Organization",
-      "name": "CalcHeure",
-      "url": "https://calculheure.fr/",
-      "logo": "https://calculheure.fr/favicon.svg"
-    },
-    {
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "Comment additionner des heures et des minutes ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Saisissez les heures, minutes et secondes, choisissez l’opération +, puis cliquez sur Calculer. L’outil transforme automatiquement 60 minutes en 1 heure."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Comment convertir 150 minutes en heures ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "150 minutes correspondent à 2 h 30. Dans l’onglet Conversion, entrez 150, choisissez Minutes, puis lancez le calcul."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Comment calculer 2h30 + 1h45 ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Entrez 2 h 30 dans la première ligne et 1 h 45 dans la deuxième ligne. Le résultat correct est 4 h 15."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Comment calculer une journée de travail ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Utilisez l’onglet Différence avec l’heure d’arrivée et l’heure de départ. Pour retirer une pause, utilisez ensuite l’outil Calcul heures de travail."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Puis-je calculer des heures supplémentaires ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Oui. Soustrayez la durée normale prévue à la durée réellement travaillée. Le résultat indique le temps supplémentaire."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Les données sont-elles envoyées sur un serveur ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Non. Les calculs se font localement dans votre navigateur. Aucune durée saisie n’est envoyée à CalcHeure."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "L’outil fonctionne-t-il sur mobile ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Oui. Les champs, boutons et résultats sont adaptés aux écrans de téléphone et de tablette."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Pourquoi une calculatrice classique donne parfois un mauvais résultat ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Parce que le temps fonctionne en base 60, alors qu’une calculatrice classique additionne des nombres décimaux. 2h45 + 3h30 n’est pas 5,75 h affiché naïvement, mais 6h15."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "Peut-on utiliser CalcHeure pour la paie ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Oui pour des calculs préparatoires. Pour une fiche de paie officielle, vérifiez toujours les règles de votre entreprise ou de votre convention collective."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "La calculatrice est-elle gratuite ?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Oui. L’outil est gratuit, sans inscription et utilisable directement en ligne."
-          }
-        }
-      ]
-    }
-  ]
-}
-  </script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Calcul Heure | Calculatrice Heure & Temps de Travail Gratuit</title>
+<meta name="description" content="Calcul heure gratuit : heures de travail, conversion minutes en heures, calcul du temps et heures supplémentaires.">
+<link rel="canonical" href="https://calculheure.fr/">
 </head>
 <body>
-<a class="skip-link" href="#main-content">Aller au contenu principal</a>
-<header class="site-header">
-  <div class="nav-inner">
-    <div class="logo"><a href="/">⏱ CalcHeure</a></div>
-    <nav class="desktop-nav" aria-label="Navigation principale">
-      <a href="/#calculator" class="active">Calculatrice</a>
-<a href="/#outils" class="">Outils</a>
-<a href="/blog/" class="">Articles</a>
-<a href="/a-propos/" class="">À propos</a>
-<a href="/#faq" class="">FAQ</a>
-      <a href="/#calculator" class="nav-cta">Calculer →</a>
-    </nav>
-    <button class="theme-btn" onclick="toggleTheme()" aria-label="Changer de thème" id="theme-btn">☀️</button>
-    <button class="hamburger" onclick="toggleMobileNav()" aria-label="Menu" aria-expanded="false" id="hamburger">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
-        <line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line>
-      </svg>
-    </button>
-  </div>
-  <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile">
-    <a href="/#calculator" onclick="closeMobileNav()" class="active">Calculatrice</a>
-<a href="/#outils" onclick="closeMobileNav()" class="">Outils</a>
-<a href="/blog/" onclick="closeMobileNav()" class="">Articles</a>
-<a href="/a-propos/" onclick="closeMobileNav()" class="">À propos</a>
-<a href="/#faq" onclick="closeMobileNav()" class="">FAQ</a>
-  </nav>
+
+<header>
+<h1>CalcHeure</h1>
+<nav>
+<a href="/">Accueil</a>
+<a href="/calcul-heures-travail/">Travail</a>
+<a href="/convertir-minutes-heures/">Conversion</a>
+<a href="/calculateur-heures-supplementaires/">Overtime</a>
+</nav>
 </header>
-<main id="main-content">
 
-<div class="hero">
-  <span class="hero-eyebrow">Outil gratuit · Sans inscription · Mobile friendly</span>
-  <h1><span>Calcul Heure</span>  Calculatrice Heure Gratuite en Ligne</h1>
-  <p>Additionnez, soustrayez et convertissez des durées en heures, minutes et secondes. CalcHeure est conçu pour le travail, la paie, les pauses, les heures supplémentaires et les calculs du quotidien.</p>
-  <div class="hero-actions">
-    <a class="btn btn-primary" href="#calculator">Utiliser la calculatrice</a>
-    <a class="btn btn-secondary" href="#outils">Voir les autres outils</a>
-  </div>
-</div>
+<main>
 
-<section id="calculator" aria-labelledby="calc-section-title" class="section-compact">
-  <h2 id="calc-section-title" class="sr-only">Calculatrice heure en ligne</h2>
-  <div class="calc-box">
-    <div class="calc-tabs" role="tablist">
-      <button class="calc-tab active" role="tab" aria-selected="true" data-tab="add">➕ Addition / Soustraction</button>
-      <button class="calc-tab" role="tab" aria-selected="false" data-tab="convert">🔄 Conversion</button>
-      <button class="calc-tab" role="tab" aria-selected="false" data-tab="diff">📅 Différence</button>
-    </div>
-    <div class="calc-panel active" id="tab-add" role="tabpanel">
-      <p class="panel-title">Calculer une durée totale</p>
-      <div class="time-rows" id="add-rows">
-        <div class="time-row">
-          <span class="row-label">Durée 1</span>
-          <div class="time-inputs">
-            <div class="field-wrap"><input type="number" min="0" placeholder="0" class="h-in" aria-label="Heures"><span class="time-unit">h</span></div>
-            <span class="sep" aria-hidden="true">:</span>
-            <div class="field-wrap"><input type="number" min="0" max="59" placeholder="0" class="m-in" aria-label="Minutes"><span class="time-unit">min</span></div>
-            <span class="sep" aria-hidden="true">:</span>
-            <div class="field-wrap"><input type="number" min="0" max="59" placeholder="0" class="s-in" aria-label="Secondes"><span class="time-unit">sec</span></div>
-          </div>
-        </div>
-        <div class="time-row">
-          <span class="row-label">Durée 2</span>
-          <div class="time-inputs">
-            <div class="field-wrap"><input type="number" min="0" placeholder="0" class="h-in" aria-label="Heures"><span class="time-unit">h</span></div>
-            <span class="sep" aria-hidden="true">:</span>
-            <div class="field-wrap"><input type="number" min="0" max="59" placeholder="0" class="m-in" aria-label="Minutes"><span class="time-unit">min</span></div>
-            <span class="sep" aria-hidden="true">:</span>
-            <div class="field-wrap"><input type="number" min="0" max="59" placeholder="0" class="s-in" aria-label="Secondes"><span class="time-unit">sec</span></div>
-          </div>
-        </div>
-      </div>
-      <div class="op-row">
-        <button class="add-row-btn" onclick="addRow()">+ Ajouter une durée</button>
-        <div class="op-selector" aria-label="Choisir l’opération">
-          <button class="op-btn active" data-op="+" aria-label="Additionner">+</button>
-          <button class="op-btn" data-op="−" aria-label="Soustraire">−</button>
-        </div>
-      </div>
-      <div id="add-error" class="error-msg"></div>
-      <div class="calc-actions">
-        <button class="btn-calc" data-label="Calculer" onclick="calcAddSub(event)">Calculer</button>
-        <button class="btn-reset" onclick="resetAddSub()">Réinitialiser</button>
-      </div>
-      <div class="result-box" id="add-result">
-        <button class="copy-btn" onclick="copyResult('add-result-main')">Copier</button>
-        <div class="result-label">Résultat final</div>
-        <div class="result-main" id="add-result-main">–</div>
-        <div class="result-sub" id="add-result-sub"></div>
-      </div>
-    </div>
-    <div class="calc-panel" id="tab-convert" role="tabpanel">
-      <p class="panel-title">Convertir une durée</p>
-      <div class="convert-grid">
-        <div class="field-group">
-          <label for="conv-val">Valeur</label>
-          <input type="number" id="conv-val" placeholder="Ex. 150" min="0">
-        </div>
-        <div class="field-group">
-          <label for="conv-unit">Unité source</label>
-          <select id="conv-unit">
-            <option value="sec">Secondes</option>
-            <option value="min" selected>Minutes</option>
-            <option value="h">Heures</option>
-            <option value="day">Jours</option>
-          </select>
-        </div>
-      </div>
-      <div id="conv-error" class="error-msg"></div>
-      <div class="calc-actions">
-        <button class="btn-calc" data-label="Convertir" onclick="calcConvert(event)">Convertir</button>
-        <button class="btn-reset" onclick="resetConvert()">Réinitialiser</button>
-      </div>
-      <div class="convert-results" id="conv-results" style="display:none"></div>
-    </div>
-    <div class="calc-panel" id="tab-diff" role="tabpanel">
-      <p class="panel-title">Différence entre deux heures</p>
-      <div class="diff-cols">
-        <div class="field-group">
-          <label for="diff-start">Heure de début</label>
-          <input type="time" id="diff-start" value="09:00">
-        </div>
-        <div class="field-group">
-          <label for="diff-end">Heure de fin</label>
-          <input type="time" id="diff-end" value="17:30">
-        </div>
-      </div>
-      <div class="calc-actions">
-        <button class="btn-calc" data-label="Calculer la différence" onclick="calcDiff(event)">Calculer la différence</button>
-        <button class="btn-reset" onclick="resetDiff()">Réinitialiser</button>
-      </div>
-      <div class="result-box" id="diff-result">
-        <button class="copy-btn" onclick="copyResult('diff-result-main')">Copier</button>
-        <div class="result-label">Durée écoulée</div>
-        <div class="result-main" id="diff-result-main">–</div>
-        <div class="result-sub" id="diff-result-sub"></div>
-      </div>
-    </div>
-  </div>
+<section>
+<h2>Outils calcul heure</h2>
+<p>calcul heure, calculatrice heure, heures de travail, convertir minutes en heures</p>
 </section>
 
-<div class="container"><div class="ad-slot" style="display:none" style="display:none" id="annonces"><div>Emplacement publicitaire — AdSense après validation du site<br><small>Remplacez ce bloc par votre code Google AdSense quand le compte sera approuvé.</small></div></div></div>
-<hr class="section-divider">
-<section id="exemples">
-  <div class="section-head">
-    <h2>Exemples de calcul heure</h2>
-    <p>Ces exemples ciblent les recherches réelles : calcul de temps de travail, conversion minutes heures, paie et suivi de présence.</p>
-  </div>
-  <div class="grid grid-3">
-    <div class="example-box">
-      <h3>Addition de durées</h3>
-      <ul class="example-list">
-        <li><strong>2h30 + 1h45 = 4h15</strong></li>
-        <li><strong>3h20 + 0h55 = 4h15</strong></li>
-        <li><strong>7h35 + 2h40 = 10h15</strong></li>
-      </ul>
-    </div>
-    <div class="example-box">
-      <h3>Conversion de temps</h3>
-      <ul class="example-list">
-        <li><strong>150 min = 2h30</strong></li>
-        <li><strong>90 min = 1h30</strong></li>
-        <li><strong>7,5 h = 7h30</strong></li>
-      </ul>
-    </div>
-    <div class="example-box">
-      <h3>Cas pratiques</h3>
-      <ul class="example-list">
-        <li>Suivi du temps de travail</li>
-        <li>Calcul des heures supplémentaires</li>
-        <li>Présence, pauses et facturation</li>
-      </ul>
-    </div>
-  </div>
+<section>
+<h2>Cluster SEO</h2>
+<ul>
+<li><a href="/calcul-heures-travail/">Calcul heures de travail</a></li>
+<li><a href="/calcul-temps-travail/">Calcul temps travail</a></li>
+<li><a href="/convertir-minutes-heures/">Conversion minutes heures</a></li>
+<li><a href="/calculateur-heures-supplementaires/">Heures supplémentaires</a></li>
+<li><a href="/addition-heures-minutes/">Addition temps</a></li>
+<li><a href="/soustraction-heures/">Soustraction temps</a></li>
+<li><a href="/convertisseur-heures-minutes/">Convertisseur temps</a></li>
+</ul>
 </section>
-<hr class="section-divider">
-<section id="how-to">
-  <div class="section-head">
-    <h2>Comment utiliser la calculatrice heure ?</h2>
-    <p>Une méthode simple pour éviter les erreurs avec les minutes, les secondes et les heures décimales.</p>
-  </div>
-  <div class="steps">
-    <div class="step"><div class="step-num">1</div><h3>Choisissez le mode</h3><p>Addition, conversion ou différence entre deux heures selon votre besoin.</p></div>
-    <div class="step"><div class="step-num">2</div><h3>Entrez les valeurs</h3><p>Saisissez les heures, minutes et secondes. Ajoutez des lignes si nécessaire.</p></div>
-    <div class="step"><div class="step-num">3</div><h3>Calculez</h3><p>Le résultat apparaît immédiatement en format lisible, minutes totales et secondes.</p></div>
-    <div class="step"><div class="step-num">4</div><h3>Copiez</h3><p>Copiez le résultat pour une fiche de présence, un tableau ou une facture.</p></div>
-  </div>
-</section>
-<hr class="section-divider">
-<section id="features">
-  <div class="section-head">
-    <h2>Fonctionnalités</h2>
-    <p>Le site n’est pas seulement joli. Il doit être utile, rapide et suffisamment solide pour le SEO.</p>
-  </div>
-  <div class="grid grid-3">
-    <div class="card"><div class="icon-badge">➕</div><h3>Addition de durées</h3><p>Addition de plusieurs heures avec gestion automatique des minutes et secondes.</p></div>
-    <div class="card"><div class="icon-badge">➖</div><h3>Soustraction de temps</h3><p>Retrait d’une pause, comparaison de durées ou calcul d’heures supplémentaires.</p></div>
-    <div class="card"><div class="icon-badge">🔄</div><h3>Conversion d’unités</h3><p>Conversion entre secondes, minutes, heures et jours, sans erreur décimale.</p></div>
-    <div class="card"><div class="icon-badge">📅</div><h3>Différence horaire</h3><p>Calcul du temps écoulé entre deux horaires, même après minuit.</p></div>
-    <div class="card"><div class="icon-badge">📱</div><h3>Interface mobile</h3><p>Champs larges, boutons visibles, navigation claire sur téléphone.</p></div>
-    <div class="card"><div class="icon-badge">🔒</div><h3>Calcul local</h3><p>Aucune inscription. Les valeurs restent dans le navigateur.</p></div>
-  </div>
-</section>
-<hr class="section-divider">
-<section id="outils">
-  <div class="section-head">
-    <h2>Outils associés</h2>
-    <p>Chaque outil a sa propre page pour capter plus de recherches Google au lieu de tout écraser sur la page d’accueil.</p>
-  </div>
-  <div class="tools-grid"><a href="/calcul-heures-travail/" class="tool-card">
-  <div class="tool-icon">⏱</div>
-  <h3>Calcul heures de travail</h3>
-  <p>Calculez une journée travaillée avec pause et salaire estimé.</p>
-</a>
-<a href="/convertisseur-minutes-heures/" class="tool-card">
-  <div class="tool-icon">🔄</div>
-  <h3>Convertisseur minutes heures</h3>
-  <p>Transformez minutes, heures, jours et secondes instantanément.</p>
-</a>
-<a href="/salaire-horaire/" class="tool-card">
-  <div class="tool-icon">💰</div>
-  <h3>Salaire horaire</h3>
-  <p>Estimez votre taux horaire à partir d’un salaire mensuel.</p>
-</a>
-<a href="/difference-entre-deux-dates/" class="tool-card">
-  <div class="tool-icon">📆</div>
-  <h3>Différence entre deux dates</h3>
-  <p>Mesurez l’écart entre deux dates en jours, heures et minutes.</p>
-</a>
-<a href="/minuteur-en-ligne/" class="tool-card">
-  <div class="tool-icon">⏰</div>
-  <h3>Minuteur en ligne</h3>
-  <p>Lancez un compte à rebours simple depuis votre navigateur.</p>
-</a>
-<a href="/feuille-de-presence/" class="tool-card">
-  <div class="tool-icon">📊</div>
-  <h3>Feuille de présence</h3>
-  <p>Additionnez les heures travaillées sur une semaine.</p>
-</a></div>
-</section>
-<hr class="section-divider">
-<section id="blog">
-  <div class="section-head">
-    <h2>Articles et guides</h2>
-    <p>Des articles et guides détaillés pour vous aider à calculer le temps, comprendre les conversions et répondre aux questions les plus fréquentes.</p>
-  </div>
-  <div class="blog-grid"><a class="blog-card" href="/blog/calcul-heures-travail/">
-  <div class="blog-thumb">⏱</div>
-  <div class="blog-body">
-    <div class="blog-tag">Guide pratique</div>
-    <h3>Comment calculer des heures de travail efficacement</h3>
-    <p>Méthode claire pour totaliser les heures, retirer les pauses et éviter les erreurs de base 60.</p>
-    <div class="blog-meta">Lecture rapide · Mis à jour en 2026</div>
-    <span class="read-more">Lire l’article →</span>
-  </div>
-</a>
-<a class="blog-card" href="/blog/convertir-minutes-heures/">
-  <div class="blog-thumb">🔄</div>
-  <div class="blog-body">
-    <div class="blog-tag">Astuces</div>
-    <h3>Convertir des minutes en heures : formules et exemples</h3>
-    <p>Comprenez la conversion 150 min = 2h30 et les erreurs fréquentes avec les heures décimales.</p>
-    <div class="blog-meta">Lecture rapide · Mis à jour en 2026</div>
-    <span class="read-more">Lire l’article →</span>
-  </div>
-</a>
-<a class="blog-card" href="/blog/gestion-du-temps-freelance/">
-  <div class="blog-thumb">📅</div>
-  <div class="blog-body">
-    <div class="blog-tag">Productivité</div>
-    <h3>Gestion du temps pour freelances : 7 techniques utiles</h3>
-    <p>Organisez votre temps, suivez vos missions et facturez plus proprement vos heures.</p>
-    <div class="blog-meta">Lecture rapide · Mis à jour en 2026</div>
-    <span class="read-more">Lire l’article →</span>
-  </div>
-</a></div>
-</section>
-<div class="container"><div class="ad-slot" style="display:none" style="display:none" style="display:none"><div>Emplacement publicitaire — AdSense après validation du site<br><small>Remplacez ce bloc par votre code Google AdSense quand le compte sera approuvé.</small></div></div></div>
-<hr class="section-divider">
-<section id="faq">
-  <div class="section-head">
-    <h2>Questions fréquentes</h2>
-    <p>Les réponses aux questions les plus courantes sur le calcul du temps, les heures de travail et les conversions.</p>
-  </div>
-  <div class="faq-list"><div class="faq-item">
-<button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">Comment additionner des heures et des minutes ? <span class="faq-chevron" aria-hidden="true">▾</span></button>
-<div class="faq-a">Saisissez les heures, minutes et secondes, choisissez l’opération +, puis cliquez sur Calculer. L’outil transforme automatiquement 60 minutes en 1 heure.</div>
-</div>
-<div class="faq-item">
-<button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">Comment convertir 150 minutes en heures ? <span class="faq-chevron" aria-hidden="true">▾</span></button>
-<div class="faq-a">150 minutes correspondent à 2 h 30. Dans l’onglet Conversion, entrez 150, choisissez Minutes, puis lancez le calcul.</div>
-</div>
-<div class="faq-item">
-<button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">Comment calculer 2h30 + 1h45 ? <span class="faq-chevron" aria-hidden="true">▾</span></button>
-<div class="faq-a">Entrez 2 h 30 dans la première ligne et 1 h 45 dans la deuxième ligne. Le résultat correct est 4 h 15.</div>
-</div>
-<div class="faq-item">
-<button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">Comment calculer une journée de travail ? <span class="faq-chevron" aria-hidden="true">▾</span></button>
-<div class="faq-a">Utilisez l’onglet Différence avec l’heure d’arrivée et l’heure de départ. Pour retirer une pause, utilisez ensuite l’outil Calcul heures de travail.</div>
-</div>
-<div class="faq-item">
-<button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">Puis-je calculer des heures supplémentaires ? <span class="faq-chevron" aria-hidden="true">▾</span></button>
-<div class="faq-a">Oui. Soustrayez la durée normale prévue à la durée réellement travaillée. Le résultat indique le temps supplémentaire.</div>
-</div>
-<div class="faq-item">
-<button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">Les données sont-elles envoyées sur un serveur ? <span class="faq-chevron" aria-hidden="true">▾</span></button>
-<div class="faq-a">Non. Les calculs se font localement dans votre navigateur. Aucune durée saisie n’est envoyée à CalcHeure.</div>
-</div>
-<div class="faq-item">
-<button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">L’outil fonctionne-t-il sur mobile ? <span class="faq-chevron" aria-hidden="true">▾</span></button>
-<div class="faq-a">Oui. Les champs, boutons et résultats sont adaptés aux écrans de téléphone et de tablette.</div>
-</div>
-<div class="faq-item">
-<button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">Pourquoi une calculatrice classique donne parfois un mauvais résultat ? <span class="faq-chevron" aria-hidden="true">▾</span></button>
-<div class="faq-a">Parce que le temps fonctionne en base 60, alors qu’une calculatrice classique additionne des nombres décimaux. 2h45 + 3h30 n’est pas 5,75 h affiché naïvement, mais 6h15.</div>
-</div>
-<div class="faq-item">
-<button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">Peut-on utiliser CalcHeure pour la paie ? <span class="faq-chevron" aria-hidden="true">▾</span></button>
-<div class="faq-a">Oui pour des calculs préparatoires. Pour une fiche de paie officielle, vérifiez toujours les règles de votre entreprise ou de votre convention collective.</div>
-</div>
-<div class="faq-item">
-<button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">La calculatrice est-elle gratuite ? <span class="faq-chevron" aria-hidden="true">▾</span></button>
-<div class="faq-a">Oui. L’outil est gratuit, sans inscription et utilisable directement en ligne.</div>
-</div></div>
-</section>
-<hr class="section-divider">
-<section id="a-propos-accueil">
-  <div class="about-strip">
-    <h2>À propos de CalcHeure</h2>
-    <p>CalcHeure est un outil simple pour calculer les durées sans confondre heures décimales et heures/minutes. Le site vise les usages concrets : présence, paie, planning, facturation et productivité.</p>
-    <div class="author-box">
-      <div class="author-avatar">⏱</div>
-      <div>
-        <div class="author-name">Rédaction CalcHeure</div>
-        <div class="author-role">Guides pratiques sur le calcul du temps, les conversions et l’organisation des heures.</div>
-      </div>
-    </div>
-  </div>
+
+<section>
+<h2>FAQ rapide</h2>
+<p>Comment calculer les heures de travail ? Utilisez notre outil automatique.</p>
+<p>Comment convertir minutes en heures ? Division automatique par 60.</p>
 </section>
 
 </main>
-<footer class="site-footer">
-  <div class="footer-grid">
-    <div class="footer-brand">
-      <div class="logo"><a href="/">⏱ CalcHeure</a></div>
-      <p>Calculatrice heure en ligne gratuite pour additionner, soustraire, convertir et mieux comprendre les durées.</p>
-    </div>
-    <div class="footer-col">
-      <h4>Outils</h4>
-      <ul><li><a href="/">Calcul heure</a></li>
-<li><a href="/calcul-heures-travail/">Calcul heures de travail</a></li>
-<li><a href="/convertisseur-minutes-heures/">Convertisseur minutes heures</a></li>
-<li><a href="/salaire-horaire/">Salaire horaire</a></li>
-<li><a href="/difference-entre-deux-dates/">Différence entre deux dates</a></li>
-<li><a href="/feuille-de-presence/">Feuille de présence</a></li></ul>
-    </div>
-    <div class="footer-col">
-      <h4>Articles</h4>
-      <ul><li><a href="/blog/calcul-heures-travail/">Calcul des heures de travail</a></li>
-<li><a href="/blog/convertir-minutes-heures/">Convertir minutes en heures</a></li>
-<li><a href="/blog/gestion-du-temps-freelance/">Gestion du temps freelance</a></li></ul>
-    </div>
-    <div class="footer-col">
-      <h4>Confiance</h4>
-      <ul>
-        <li><a href="/a-propos/">À propos</a></li>
-        <li><a href="/contact/">Contact</a></li>
-        <li><a href="/politique-confidentialite/">Confidentialité</a></li>
-      </ul>
-    </div>
-  </div>
-  <div class="footer-bottom">
-    <p>© 2026 CalcHeure. Calculatrice heure gratuite en ligne. Tous droits réservés.</p>
-    <div class="footer-links">
-      <a href="/politique-confidentialite/">Confidentialité</a>
-      <a href="/contact/">Contact</a>
-      <a href="/sitemap.xml">Plan du site</a>
-    </div>
-  </div>
+
+<footer>
+<a href="/contact/">Contact</a> |
+<a href="/a-propos/">À propos</a> |
+<a href="/confidentialite/">Confidentialité</a>
 </footer>
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
-<script src="/assets/js/app.js" defer></script>
+
 </body>
 </html>
