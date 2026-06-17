@@ -1,17 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://heurejour.com/</loc><changefreq>monthly</changefreq><priority>1.0</priority></url>
-  <url><loc>https://heurejour.com/calcul-heures-travail/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://heurejour.com/calcul-temps-travail/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://heurejour.com/convertir-minutes-heures/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://heurejour.com/calculateur-heures-supplementaires/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://heurejour.com/addition-heures-minutes/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://heurejour.com/soustraction-heures/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://heurejour.com/convertisseur-heures-minutes/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://heurejour.com/blog/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://heurejour.com/blog/calcul-heures-travail/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://heurejour.com/liens-internes/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://heurejour.com/contact/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://heurejour.com/a-propos/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
-  <url><loc>https://heurejour.com/confidentialite/</loc><changefreq>monthly</changefreq><priority>0.8</priority></url>
+<url><loc>https://heurejour.com/</loc></url>
+<url><loc>https://heurejour.com/pages/calcul-heures-travail.html</loc></url>
+<url><loc>https://heurejour.com/pages/conversion-minutes-heures.html</loc></url>
+<url><loc>https://heurejour.com/pages/heures-supplementaires.html</loc></url>
+<url><loc>https://heurejour.com/pages/addition-temps.html</loc></url>
+<url><loc>https://heurejour.com/pages/soustraction-temps.html</loc></url>
 </urlset>
