@@ -1,9 +1,53 @@
 
-body {font-family: Arial; margin:0; background:#f5f7fa; color:#111;}
-.hero {padding:60px 20px; text-align:center; background:#063B88; color:white;}
-.hero h1 {font-size:32px;}
-.cta a {background:#35C9E8; padding:12px 20px; color:#000; text-decoration:none; border-radius:8px;}
-.grid {display:grid; grid-template-columns:repeat(auto-fit,minmax(200px,1fr)); gap:15px; padding:30px;}
-.card {background:white; padding:20px; text-align:center; border-radius:10px; text-decoration:none; color:#111; box-shadow:0 2px 10px rgba(0,0,0,0.1);}
-.seo {padding:40px; text-align:center;}
-footer {text-align:center; padding:20px; background:#111; color:white;}
+body{
+font-family: Arial, sans-serif;
+margin:0;
+background:#f5f7fa;
+color:#111;
+}
+
+.container{
+max-width:1100px;
+margin:auto;
+padding:20px;
+}
+
+.header{
+background:#063B88;
+color:white;
+padding:40px 0;
+text-align:center;
+}
+
+nav a{
+color:white;
+margin:0 10px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.section{
+padding:40px 0;
+}
+
+.grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+}
+
+.card{
+background:white;
+padding:20px;
+border-radius:10px;
+text-decoration:none;
+color:#111;
+box-shadow:0 5px 15px rgba(0,0,0,0.1);
+display:block;
+text-align:center;
+}
+
+.card:hover{
+transform:translateY(-4px);
+transition:0.2s;
+}
