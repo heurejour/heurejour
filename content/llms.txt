@@ -1,0 +1,13 @@
+# HeureJour
+
+HeureJour is a French website for free time calculators.
+
+Main topics:
+- calcul heure
+- calculatrice heure
+- heures de travail
+- convertir minutes en heures
+- heures supplémentaires
+
+Canonical site: https://heurejour.com/
+Contact: heurejour360@gmail.com
