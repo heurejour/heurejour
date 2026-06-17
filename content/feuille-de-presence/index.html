@@ -1,19 +1,19 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF 8">
+  <meta name="viewport" content="width=device width, initial scale=1.0">
   <title>Feuille de Présence | Calcul des Heures de la Semaine</title>
   <meta name="description" content="Additionnez vos heures travaillées par jour et obtenez un total hebdomadaire clair en heures et minutes.">
   <meta name="robots" content="index,follow">
-  <meta name="theme-color" content="#0d1117">
-  <link rel="canonical" href="https://calculheure.fr/feuille-de-presence/">
+  <meta name="theme color" content="#0d1117">
+  <link rel="canonical" href="https://calculheure.fr/feuille de presence/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="Feuille de Présence | Calcul des Heures de la Semaine">
   <meta property="og:description" content="Additionnez vos heures travaillées par jour et obtenez un total hebdomadaire clair en heures et minutes.">
-  <meta property="og:url" content="https://calculheure.fr/feuille-de-presence/">
+  <meta property="og:url" content="https://calculheure.fr/feuille de presence/">
   <meta property="og:site_name" content="CalcHeure">
-  <meta property="og:image" content="https://calculheure.fr/og-image.png">
+  <meta property="og:image" content="https://calculheure.fr/og image.png">
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Feuille de Présence | Calcul des Heures de la Semaine">
   <meta name="twitter:description" content="Additionnez vos heures travaillées par jour et obtenez un total hebdomadaire clair en heures et minutes.">
@@ -25,154 +25,154 @@
   
 </head>
 <body>
-<a class="skip-link" href="#main-content">Aller au contenu principal</a>
-<header class="site-header">
-  <div class="nav-inner">
+<a class="skip link" href="#main content">Aller au contenu principal</a>
+<header class="site header">
+  <div class="nav inner">
     <div class="logo"><a href="/">⏱ CalcHeure</a></div>
-    <nav class="desktop-nav" aria-label="Navigation principale">
+    <nav class="desktop nav" aria label="Navigation principale">
       <a href="/#calculator" class="">Calculatrice</a>
 <a href="/#outils" class="active">Outils</a>
 <a href="/blog/" class="">Articles</a>
-<a href="/a-propos/" class="">À propos</a>
+<a href="/a propos/" class="">À propos</a>
 <a href="/#faq" class="">FAQ</a>
-      <a href="/#calculator" class="nav-cta">Calculer →</a>
+      <a href="/#calculator" class="nav cta">Calculer →</a>
     </nav>
-    <button class="theme-btn" onclick="toggleTheme()" aria-label="Changer de thème" id="theme-btn">☀️</button>
-    <button class="hamburger" onclick="toggleMobileNav()" aria-label="Menu" aria-expanded="false" id="hamburger">
-      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+    <button class="theme btn" onclick="toggleTheme()" aria label="Changer de thème" id="theme btn">☀️</button>
+    <button class="hamburger" onclick="toggleMobileNav()" aria label="Menu" aria expanded="false" id="hamburger">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke width="2" stroke linecap="round" aria hidden="true">
         <line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line>
       </svg>
     </button>
   </div>
-  <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile">
+  <nav class="mobile nav" id="mobile nav" aria label="Menu mobile">
     <a href="/#calculator" onclick="closeMobileNav()" class="">Calculatrice</a>
 <a href="/#outils" onclick="closeMobileNav()" class="active">Outils</a>
 <a href="/blog/" onclick="closeMobileNav()" class="">Articles</a>
-<a href="/a-propos/" onclick="closeMobileNav()" class="">À propos</a>
+<a href="/a propos/" onclick="closeMobileNav()" class="">À propos</a>
 <a href="/#faq" onclick="closeMobileNav()" class="">FAQ</a>
   </nav>
 </header>
-<main id="main-content">
+<main id="main content">
 
 <div class="hero narrow">
-  <span class="hero-eyebrow">Outil présence</span>
+  <span class="hero eyebrow">Outil présence</span>
   <h1><span>Feuille de présence</span> hebdomadaire</h1>
   <p>Additionnez les heures travaillées de la semaine pour obtenir un total en heures/minutes et en heures décimales.</p>
 </div>
-<section class="section-compact">
-  <div class="calc-box">
-    <div class="calc-panel active">
-      <p class="panel-title">Total hebdomadaire</p>
-      <div class="time-rows"><div class="time-row timesheet-row">
-  <span class="row-label">Lundi</span>
-  <div class="time-inputs">
-    <div class="field-wrap"><input type="number" min="0" class="ts-h" placeholder="0" aria-label="Heures Lundi"><span class="time-unit">h</span></div>
+<section class="section compact">
+  <div class="calc box">
+    <div class="calc panel active">
+      <p class="panel title">Total hebdomadaire</p>
+      <div class="time rows"><div class="time row timesheet row">
+  <span class="row label">Lundi</span>
+  <div class="time inputs">
+    <div class="field wrap"><input type="number" min="0" class="ts h" placeholder="0" aria label="Heures Lundi"><span class="time unit">h</span></div>
     <span class="sep">:</span>
-    <div class="field-wrap"><input type="number" min="0" max="59" class="ts-m" placeholder="0" aria-label="Minutes Lundi"><span class="time-unit">min</span></div>
+    <div class="field wrap"><input type="number" min="0" max="59" class="ts m" placeholder="0" aria label="Minutes Lundi"><span class="time unit">min</span></div>
   </div>
 </div>
-<div class="time-row timesheet-row">
-  <span class="row-label">Mardi</span>
-  <div class="time-inputs">
-    <div class="field-wrap"><input type="number" min="0" class="ts-h" placeholder="0" aria-label="Heures Mardi"><span class="time-unit">h</span></div>
+<div class="time row timesheet row">
+  <span class="row label">Mardi</span>
+  <div class="time inputs">
+    <div class="field wrap"><input type="number" min="0" class="ts h" placeholder="0" aria label="Heures Mardi"><span class="time unit">h</span></div>
     <span class="sep">:</span>
-    <div class="field-wrap"><input type="number" min="0" max="59" class="ts-m" placeholder="0" aria-label="Minutes Mardi"><span class="time-unit">min</span></div>
+    <div class="field wrap"><input type="number" min="0" max="59" class="ts m" placeholder="0" aria label="Minutes Mardi"><span class="time unit">min</span></div>
   </div>
 </div>
-<div class="time-row timesheet-row">
-  <span class="row-label">Mercredi</span>
-  <div class="time-inputs">
-    <div class="field-wrap"><input type="number" min="0" class="ts-h" placeholder="0" aria-label="Heures Mercredi"><span class="time-unit">h</span></div>
+<div class="time row timesheet row">
+  <span class="row label">Mercredi</span>
+  <div class="time inputs">
+    <div class="field wrap"><input type="number" min="0" class="ts h" placeholder="0" aria label="Heures Mercredi"><span class="time unit">h</span></div>
     <span class="sep">:</span>
-    <div class="field-wrap"><input type="number" min="0" max="59" class="ts-m" placeholder="0" aria-label="Minutes Mercredi"><span class="time-unit">min</span></div>
+    <div class="field wrap"><input type="number" min="0" max="59" class="ts m" placeholder="0" aria label="Minutes Mercredi"><span class="time unit">min</span></div>
   </div>
 </div>
-<div class="time-row timesheet-row">
-  <span class="row-label">Jeudi</span>
-  <div class="time-inputs">
-    <div class="field-wrap"><input type="number" min="0" class="ts-h" placeholder="0" aria-label="Heures Jeudi"><span class="time-unit">h</span></div>
+<div class="time row timesheet row">
+  <span class="row label">Jeudi</span>
+  <div class="time inputs">
+    <div class="field wrap"><input type="number" min="0" class="ts h" placeholder="0" aria label="Heures Jeudi"><span class="time unit">h</span></div>
     <span class="sep">:</span>
-    <div class="field-wrap"><input type="number" min="0" max="59" class="ts-m" placeholder="0" aria-label="Minutes Jeudi"><span class="time-unit">min</span></div>
+    <div class="field wrap"><input type="number" min="0" max="59" class="ts m" placeholder="0" aria label="Minutes Jeudi"><span class="time unit">min</span></div>
   </div>
 </div>
-<div class="time-row timesheet-row">
-  <span class="row-label">Vendredi</span>
-  <div class="time-inputs">
-    <div class="field-wrap"><input type="number" min="0" class="ts-h" placeholder="0" aria-label="Heures Vendredi"><span class="time-unit">h</span></div>
+<div class="time row timesheet row">
+  <span class="row label">Vendredi</span>
+  <div class="time inputs">
+    <div class="field wrap"><input type="number" min="0" class="ts h" placeholder="0" aria label="Heures Vendredi"><span class="time unit">h</span></div>
     <span class="sep">:</span>
-    <div class="field-wrap"><input type="number" min="0" max="59" class="ts-m" placeholder="0" aria-label="Minutes Vendredi"><span class="time-unit">min</span></div>
+    <div class="field wrap"><input type="number" min="0" max="59" class="ts m" placeholder="0" aria label="Minutes Vendredi"><span class="time unit">min</span></div>
   </div>
 </div>
-<div class="time-row timesheet-row">
-  <span class="row-label">Samedi</span>
-  <div class="time-inputs">
-    <div class="field-wrap"><input type="number" min="0" class="ts-h" placeholder="0" aria-label="Heures Samedi"><span class="time-unit">h</span></div>
+<div class="time row timesheet row">
+  <span class="row label">Samedi</span>
+  <div class="time inputs">
+    <div class="field wrap"><input type="number" min="0" class="ts h" placeholder="0" aria label="Heures Samedi"><span class="time unit">h</span></div>
     <span class="sep">:</span>
-    <div class="field-wrap"><input type="number" min="0" max="59" class="ts-m" placeholder="0" aria-label="Minutes Samedi"><span class="time-unit">min</span></div>
+    <div class="field wrap"><input type="number" min="0" max="59" class="ts m" placeholder="0" aria label="Minutes Samedi"><span class="time unit">min</span></div>
   </div>
 </div>
-<div class="time-row timesheet-row">
-  <span class="row-label">Dimanche</span>
-  <div class="time-inputs">
-    <div class="field-wrap"><input type="number" min="0" class="ts-h" placeholder="0" aria-label="Heures Dimanche"><span class="time-unit">h</span></div>
+<div class="time row timesheet row">
+  <span class="row label">Dimanche</span>
+  <div class="time inputs">
+    <div class="field wrap"><input type="number" min="0" class="ts h" placeholder="0" aria label="Heures Dimanche"><span class="time unit">h</span></div>
     <span class="sep">:</span>
-    <div class="field-wrap"><input type="number" min="0" max="59" class="ts-m" placeholder="0" aria-label="Minutes Dimanche"><span class="time-unit">min</span></div>
+    <div class="field wrap"><input type="number" min="0" max="59" class="ts m" placeholder="0" aria label="Minutes Dimanche"><span class="time unit">min</span></div>
   </div>
 </div></div>
-      <div class="calc-actions"><button class="btn-calc" data-label="Calculer la semaine" onclick="calcTimesheet(event)">Calculer la semaine</button></div>
-      <div class="result-box" id="timesheet-result">
-        <div class="result-label">Total semaine</div>
-        <div class="result-main" id="timesheet-result-main">–</div>
-        <div class="result-sub" id="timesheet-result-sub"></div>
+      <div class="calc actions"><button class="btn calc" data label="Calculer la semaine" onclick="calcTimesheet(event)">Calculer la semaine</button></div>
+      <div class="result box" id="timesheet result">
+        <div class="result label">Total semaine</div>
+        <div class="result main" id="timesheet result main">–</div>
+        <div class="result sub" id="timesheet result sub"></div>
       </div>
     </div>
   </div>
 </section>
 <section>
-  <div class="article-content">
+  <div class="article content">
     <h2>Pourquoi additionner en heures/minutes ?</h2>
     <p>Un total hebdomadaire en base 60 évite les erreurs de conversion. Par exemple, 7h45 sur cinq jours donne 38h45, pas 38,225 h.</p>
-    <div class="author-box">
-  <div class="author-avatar">⏱</div>
+    <div class="author box">
+  <div class="author avatar">⏱</div>
   <div>
-    <div class="author-name">Rédaction CalcHeure</div>
-    <div class="author-role">Contenu pratique sur le calcul des durées, les conversions et l’organisation du temps.</div>
+    <div class="author name">Rédaction CalcHeure</div>
+    <div class="author role">Contenu pratique sur le calcul des durées, les conversions et l’organisation du temps.</div>
   </div>
 </div>
   </div>
 </section>
 
 </main>
-<footer class="site-footer">
-  <div class="footer-grid">
-    <div class="footer-brand">
+<footer class="site footer">
+  <div class="footer grid">
+    <div class="footer brand">
       <div class="logo"><a href="/">⏱ CalcHeure</a></div>
       <p>Calculatrice heure en ligne gratuite pour additionner, soustraire, convertir et mieux comprendre les durées.</p>
     </div>
-    <div class="footer-col">
+    <div class="footer col">
       <h4>Outils</h4>
       <ul><li><a href="/">Calcul heure</a></li>
-<li><a href="/calcul-heures-travail/">Calcul heures de travail</a></li>
-<li><a href="/convertisseur-minutes-heures/">Convertisseur minutes heures</a></li>
-<li><a href="/salaire-horaire/">Salaire horaire</a></li>
-<li><a href="/difference-entre-deux-dates/">Différence entre deux dates</a></li>
-<li><a href="/feuille-de-presence/">Feuille de présence</a></li></ul>
+<li><a href="/calcul heures travail/">Calcul heures de travail</a></li>
+<li><a href="/convertisseur minutes heures/">Convertisseur minutes heures</a></li>
+<li><a href="/salaire horaire/">Salaire horaire</a></li>
+<li><a href="/difference entre deux dates/">Différence entre deux dates</a></li>
+<li><a href="/feuille de presence/">Feuille de présence</a></li></ul>
     </div>
-    <div class="footer-col">
+    <div class="footer col">
       <h4>Articles</h4>
-      <ul><li><a href="/blog/calcul-heures-travail/">Calcul des heures de travail</a></li>
-<li><a href="/blog/convertir-minutes-heures/">Convertir minutes en heures</a></li>
-<li><a href="/blog/gestion-du-temps-freelance/">Gestion du temps freelance</a></li></ul>
+      <ul><li><a href="/blog/calcul heures travail/">Calcul des heures de travail</a></li>
+<li><a href="/blog/convertir minutes heures/">Convertir minutes en heures</a></li>
+<li><a href="/blog/gestion du temps freelance/">Gestion du temps freelance</a></li></ul>
     </div>
-    <div class="footer-col">
+    <div class="footer col">
       <h4>Confiance</h4>
       <ul>
-        <li><a href="/a-propos/">À propos</a></li>
+        <li><a href="/a propos/">À propos</a></li>
         <li><a href="/contact/">Contact</a></li>
-        <li><a href="/politique-confidentialite/">Confidentialité</a></li>
+        <li><a href="/politique confidentialite/">Confidentialité</a></li>
       </ul>
     </div>
-    <div class="footer-col">
+    <div class="footer col">
       <h4>Monétisation</h4>
       <ul>
         <li><a href="/#annonces">Emplacements publicitaires</a></li>
@@ -181,16 +181,16 @@
       </ul>
     </div>
   </div>
-  <div class="footer-bottom">
+  <div class="footer bottom">
     <p>© 2026 CalcHeure. Calculatrice heure gratuite en ligne. Tous droits réservés.</p>
-    <div class="footer-links">
-      <a href="/politique-confidentialite/">Confidentialité</a>
+    <div class="footer links">
+      <a href="/politique confidentialite/">Confidentialité</a>
       <a href="/contact/">Contact</a>
       <a href="/sitemap.xml">Plan du site</a>
     </div>
   </div>
 </footer>
-<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div class="toast" id="toast" role="status" aria live="polite"></div>
 <script src="/assets/js/app.js" defer></script>
 </body>
 </html>
