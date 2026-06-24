@@ -96,7 +96,7 @@ img,svg{max-width:100%;height:auto}
 .time-row{display:flex;align-items:center;gap:12px;background:var(--card);border:1px solid var(--border);border-radius:15px;padding:14px}
 .row-label{font-size:.72rem;color:var(--muted);font-weight:850;letter-spacing:.06em;text-transform:uppercase;width:70px;flex-shrink:0}
 .time-inputs{display:flex;align-items:center;gap:7px;flex:1;flex-wrap:wrap}
-.field-wrap{display:flex;flex-direction:column;align-items:center}
+.field-wrap{display:flex;align-items:center;position:relative;}
 .time-inputs input,.field-group input,.field-group select,.field-group textarea{background:var(--bg);border:1px solid var(--border);border-radius:11px;color:var(--text);font-family:var(--fh);font-weight:750;outline:none;transition:border-color .2s,box-shadow .2s}
 .time-inputs input{width:74px;padding:9px 7px;text-align:center;font-size:1.25rem}
 .field-group input,.field-group select,.field-group textarea{width:100%;padding:13px 14px;font-size:1rem}
@@ -104,7 +104,7 @@ img,svg{max-width:100%;height:auto}
 .time-inputs input:focus,.field-group input:focus,.field-group select:focus,.field-group textarea:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(59,130,246,.13)}
 .time-inputs input.invalid{border-color:var(--danger)}
 .sep{color:var(--muted);font-size:1.2rem;font-weight:900}
-.time-unit{font-size:.67rem;color:var(--muted);margin-top:2px}
+.time-unit{font-size:.85rem;color:var(--muted);position:absolute;right:13px;pointer-events:none;}
 .op-row{display:flex;justify-content:space-between;align-items:center;gap:12px;margin-bottom:18px;flex-wrap:wrap}
 .add-row-btn,.op-btn,.del-btn{font-family:var(--fb);border-radius:12px;cursor:pointer;font-weight:800}
 .add-row-btn{background:var(--card);border:1px dashed var(--border);color:var(--accent);padding:9px 15px}
