@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcul Heures de Nuit | CalcHeure</title>
+  <meta name="description" content="Calculez vos heures de travail de nuit facilement : passage à minuit, pauses et majoration salariale pris en compte automatiquement.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="canonical" href="https://heurejour.com/calcul-heures-nuit/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Calcul Heures de Nuit | CalcHeure">
+  <meta property="og:description" content="Calculez vos heures de travail de nuit facilement : passage à minuit, pauses et majoration salariale pris en compte automatiquement.">
+  <meta property="og:url" content="https://heurejour.com/calcul-heures-nuit/">
+  <meta property="og:site_name" content="CalcHeure">
+  <meta property="og:image" content="https://www.heurejour.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Calcul Heures de Nuit | CalcHeure">
+  <meta name="twitter:description" content="Calculez vos heures de travail de nuit facilement : passage à minuit, pauses et majoration salariale pris en compte automatiquement.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Calcul heures de nuit",
+    "url": "https://heurejour.com/calcul-heures-nuit/",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any"
+  }
+  </script>
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Comment calculer des heures de travail de nuit avec passage à minuit ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Quand l'heure de fin est inférieure à l'heure de début, ajoutez 24 heures à l'heure de fin avant de soustraire : (heure de fin + 24h) − heure de début − durée des pauses."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Les pauses de nuit sont-elles rémunérées ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Cela dépend de votre convention collective. Certaines branches prévoient que les pauses nocturnes sont considérées comme du temps de travail effectif, notamment lorsque le salarié reste sur site."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment calculer les heures supplémentaires sur un poste de nuit ?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Soustrayez la durée contractuelle journalière du temps total travaillé. Les heures excédentaires sont des heures supplémentaires, auxquelles s'ajoute la majoration de nuit si elles se situent dans la plage nocturne."
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Aller au contenu principal</a>
+<header class="site-header">
+  <div class="nav-inner">
+    <div class="logo"><a href="/">⏱ CalcHeure</a></div>
+    <nav class="desktop-nav" aria-label="Navigation principale">
+      <a href="/#calculator" class="">Calculatrice</a>
+      <a href="/#outils" class="active">Outils</a>
+      <a href="/blog/" class="">Articles</a>
+      <a href="/a-propos/" class="">À propos</a>
+      <a href="/#faq" class="">FAQ</a>
+      <a href="/#calculator" class="nav-cta">Calculer →</a>
+    </nav>
+    <button class="theme-btn" onclick="toggleTheme()" aria-label="Changer de thème" id="theme-btn">☀️</button>
+    <button class="hamburger" onclick="toggleMobileNav()" aria-label="Menu" aria-expanded="false" id="hamburger">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile">
+    <a href="/#calculator" onclick="closeMobileNav()" class="">Calculatrice</a>
+    <a href="/#outils" onclick="closeMobileNav()" class="active">Outils</a>
+    <a href="/blog/" onclick="closeMobileNav()" class="">Articles</a>
+    <a href="/a-propos/" onclick="closeMobileNav()" class="">À propos</a>
+    <a href="/#faq" onclick="closeMobileNav()" class="">FAQ</a>
+  </nav>
+</header>
+
+<main id="main-content">
+
+  <div class="hero narrow">
+    <span class="hero-eyebrow">Outil travail de nuit</span>
+    <h1><span>Calcul heures de nuit</span> avec passage à minuit</h1>
+    <p>Calculez votre temps de travail nocturne même si votre poste chevauche deux jours. Gérez les pauses et obtenez une estimation de rémunération avec majoration.</p>
+  </div>
+
+  <section class="section-compact">
+    <div class="calc-box">
+      <div class="calc-panel active">
+        <p class="panel-title">Calculateur d'heures de nuit</p>
+        <div class="form-grid">
+          <div class="field-group"><label for="night-start">Heure de début</label><input type="time" id="night-start" value="22:00"></div>
+          <div class="field-group"><label for="night-end">Heure de fin</label><input type="time" id="night-end" value="06:00"></div>
+          <div class="field-group"><label for="night-break">Pause en minutes</label><input type="number" id="night-break" min="0" value="30"></div>
+          <div class="field-group"><label for="night-rate">Taux horaire en €</label><input type="number" id="night-rate" min="0" step="0.01" placeholder="Optionnel"></div>
+          <div class="field-group"><label for="night-major">Taux de majoration %</label><input type="number" id="night-major" min="0" max="100" value="25"></div>
+        </div>
+        <div class="calc-actions">
+          <button class="btn-calc" data-label="Calculer mes heures de nuit" onclick="calcNightHours(event)">Calculer mes heures de nuit</button>
+        </div>
+        <div class="result-box" id="night-result">
+          <div class="result-label">Temps travaillé</div>
+          <div class="result-main" id="night-result-main">–</div>
+          <div class="result-sub" id="night-result-sub"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="container">
+    <div class="ad-slot" style="display:none" id="annonces">
+      <div>Emplacement publicitaire — AdSense après validation du site<br><small>Remplacez ce bloc par votre code Google AdSense quand le compte sera approuvé.</small></div>
+    </div>
+  </div>
+
+  <section>
+    <div class="article-content">
+
+      <h2>Comment calculer des heures de travail de nuit ?</h2>
+      <p class="lead">Le calcul des heures de nuit présente une particularité : la plage horaire peut chevaucher deux jours calendaires. Sans méthode adaptée, on obtient des résultats négatifs ou erronés.</p>
+
+      <h2>Formule de calcul</h2>
+      <p>Lorsque l'heure de fin est inférieure à l'heure de début (passage à minuit), ajoutez 24 heures à l'heure de fin avant de soustraire :</p>
+      <p><strong>Temps travaillé = (Heure de fin + 24h) − Heure de début − Durée des pauses</strong></p>
+      <p>Exemple : début à 22h00, fin à 6h30, pause de 30 minutes → (6h30 + 24h00) − 22h00 − 0h30 = <strong>8h00 travaillées</strong>.</p>
+
+      <h2>Exemples de calculs fréquents</h2>
+      <table>
+        <thead>
+          <tr><th>Début</th><th>Fin</th><th>Pause</th><th>Temps travaillé</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>22h00</td><td>6h00</td><td>0h00</td><td>8h00</td></tr>
+          <tr><td>21h30</td><td>5h30</td><td>0h30</td><td>7h30</td></tr>
+          <tr><td>23h00</td><td>7h00</td><td>1h00</td><td>7h00</td></tr>
+          <tr><td>20h45</td><td>4h15</td><td>0h45</td><td>6h45</td></tr>
+          <tr><td>0h00</td><td>8h00</td><td>0h30</td><td>7h30</td></tr>
+        </tbody>
+      </table>
+
+      <h2>Définition du travail de nuit</h2>
+      <p>En France, le travail de nuit désigne toute activité réalisée entre 21h00 et 6h00. Les heures travaillées sur cette plage peuvent ouvrir droit à des majorations de salaire ou à des repos compensateurs, selon la convention collective applicable.</p>
+
+      <h2>Calcul de la majoration de nuit</h2>
+      <p>Une fois le nombre d'heures nocturnes déterminé, la majoration s'applique au taux horaire brut. Le taux légal minimum est généralement fixé à 25 %, mais peut varier :</p>
+      <p><strong>Salaire nuit = Heures de nuit × Taux horaire × (1 + taux de majoration)</strong></p>
+      <p>Exemple : 8 heures × 12,50 € × 1,25 = <strong>125,00 €</strong> pour la nuit travaillée.</p>
+
+      <h2>Pourquoi utiliser une calculatrice d'heures de nuit ?</h2>
+      <ul>
+        <li>éviter les erreurs lors du passage à minuit ;</li>
+        <li>obtenir le résultat en heures et minutes, sans conversion manuelle ;</li>
+        <li>vérifier rapidement les bulletins de paie ou les relevés d'heures ;</li>
+        <li>calculer automatiquement les heures supplémentaires sur un poste de nuit.</li>
+      </ul>
+
+      <h2>Questions fréquentes</h2>
+
+      <h3>Comment calculer ses heures avec passage à minuit ?</h3>
+      <p>Il faut ajouter 24 heures à l'heure de fin quand celle-ci est inférieure à l'heure de début, puis soustraire la durée des pauses.</p>
+
+      <h3>Les pauses de nuit sont-elles rémunérées ?</h3>
+      <p>Cela dépend de votre convention collective. Certaines branches prévoient que les pauses nocturnes sont considérées comme du temps de travail effectif, notamment lorsque le salarié reste sur site.</p>
+
+      <h3>Comment calculer les heures supplémentaires sur un poste de nuit ?</h3>
+      <p>Soustrayez la durée contractuelle journalière du temps total travaillé. Les heures excédentaires sont des heures supplémentaires, auxquelles s'ajoute la majoration de nuit si elles se situent dans la plage nocturne.</p>
+
+      <h2>Conclusion</h2>
+      <p>Calculer des heures de travail de nuit nécessite d'adapter la formule standard pour gérer le changement de journée. En ajoutant 24 heures à l'heure de fin quand celle-ci est inférieure à l'heure de début, on obtient un résultat exact. Cette calculatrice automatise ce traitement pour gagner du temps sur la vérification des plannings et des paies.</p>
+
+      <div class="author-box">
+        <div class="author-avatar">⏱</div>
+        <div>
+          <div class="author-name">Rédaction CalcHeure</div>
+          <div class="author-role">Contenu pratique sur le calcul des durées, les conversions et l'organisation du temps.</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo"><a href="/">⏱ CalcHeure</a></div>
+      <p>Calculatrice heure en ligne gratuite pour additionner, soustraire, convertir et mieux comprendre les durées.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Outils</h4>
+      <ul>
+        <li><a href="/">Calcul heure</a></li>
+        <li><a href="/calcul-heures-travail/">Calcul heures de travail</a></li>
+        <li><a href="/calcul-heures-nuit/">Calcul heures de nuit</a></li>
+        <li><a href="/convertisseur-minutes-heures/">Convertisseur minutes heures</a></li>
+        <li><a href="/salaire-horaire/">Salaire horaire</a></li>
+        <li><a href="/difference-entre-deux-dates/">Différence entre deux dates</a></li>
+        <li><a href="/feuille-de-presence/">Feuille de présence</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Articles</h4>
+      <ul>
+        <li><a href="/blog/calcul-heures-travail/">Calcul des heures de travail</a></li>
+        <li><a href="/blog/calcul-heures-nuit/">Calcul heures de nuit</a></li>
+        <li><a href="/blog/convertir-minutes-heures/">Convertir minutes en heures</a></li>
+        <li><a href="/blog/gestion-du-temps-freelance/">Gestion du temps freelance</a></li>
+        <li><a href="/blog/taux-horaire-net-brut/">Taux horaire net à partir du brut</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Confiance</h4>
+      <ul>
+        <li><a href="/a-propos/">À propos</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/politique-confidentialite/">Confidentialité</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 CalcHeure. Calculatrice heure gratuite en ligne. Tous droits réservés.</p>
+    <div class="footer-links">
+      <a href="/politique-confidentialite/">Confidentialité</a>
+      <a href="/contact/">Contact</a>
+      <a href="/sitemap.xml">Plan du site</a>
+    </div>
+  </div>
+</footer>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/assets/js/app.js" defer></script>
+<script>
+function calcNightHours(e) {
+  const btn = e.currentTarget;
+  const originalLabel = btn.dataset.label;
+  btn.textContent = 'Calcul en cours…';
+  btn.disabled = true;
+
+  setTimeout(() => {
+    const startVal = document.getElementById('night-start').value;
+    const endVal   = document.getElementById('night-end').value;
+    const breakMin = parseFloat(document.getElementById('night-break').value) || 0;
+    const rate     = parseFloat(document.getElementById('night-rate').value) || 0;
+    const major    = parseFloat(document.getElementById('night-major').value) / 100 || 0.25;
+
+    if (!startVal || !endVal) {
+      document.getElementById('night-result-main').textContent = '–';
+      document.getElementById('night-result-sub').textContent  = 'Veuillez renseigner les heures de début et de fin.';
+      btn.textContent = originalLabel;
+      btn.disabled = false;
+      return;
+    }
+
+    const [sh, sm] = startVal.split(':').map(Number);
+    let   [eh, em] = endVal.split(':').map(Number);
+
+    let startTotalMin = sh * 60 + sm;
+    let endTotalMin   = eh * 60 + em;
+
+    if (endTotalMin <= startTotalMin) {
+      endTotalMin += 24 * 60;
+    }
+
+    const workedMin = endTotalMin - startTotalMin - breakMin;
+
+    if (workedMin <= 0) {
+      document.getElementById('night-result-main').textContent = '–';
+      document.getElementById('night-result-sub').textContent  = 'La durée de pause est supérieure au temps total. Vérifiez vos saisies.';
+      btn.textContent = originalLabel;
+      btn.disabled = false;
+      return;
+    }
+
+    const h = Math.floor(workedMin / 60);
+    const m = Math.round(workedMin % 60);
+    const hLabel = h + 'h' + String(m).padStart(2, '0');
+    const decLabel = (workedMin / 60).toFixed(2).replace('.', ',') + ' h décimales';
+
+    document.getElementById('night-result-main').textContent = hLabel;
+
+    let sub = decLabel;
+    if (rate > 0) {
+      const salaire = ((workedMin / 60) * rate * (1 + major)).toFixed(2).replace('.', ',');
+      sub += ` — Rémunération estimée (majoration ${Math.round(major * 100)} %) : ${salaire} €`;
+    }
+    document.getElementById('night-result-sub').textContent = sub;
+
+    btn.textContent = originalLabel;
+    btn.disabled = false;
+  }, 300);
+}
+</script>
+</body>
+</html>
