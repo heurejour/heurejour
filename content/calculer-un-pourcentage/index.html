@@ -26,6 +26,49 @@
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap">
   <link rel="stylesheet" href="/assets/css/style.css">
 
+  <!-- FIX: inline styles scoped to this page only — no touching shared style.css -->
+  <style>
+    /* % input wrapper — flex row, badge sits inline inside the border */
+    .pct-field-wrap {
+      display: flex;
+      align-items: center;
+      background: var(--bg);
+      border: 1px solid var(--border);
+      border-radius: 11px;
+      overflow: hidden;
+      transition: border-color .2s, box-shadow .2s;
+    }
+    .pct-field-wrap:focus-within {
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px rgba(59,130,246,.13);
+    }
+    .pct-field-wrap input {
+      flex: 1;
+      min-width: 0;
+      padding: 13px 10px 13px 14px;
+      background: transparent;
+      border: none;
+      outline: none;
+      color: var(--text);
+      font-family: var(--fh);
+      font-weight: 750;
+      font-size: 1rem;
+    }
+    .pct-unit {
+      padding: 0 14px 0 6px;
+      color: var(--muted);
+      font-size: .85rem;
+      white-space: nowrap;
+      user-select: none;
+    }
+    /* Space calc-boxes apart */
+    .calc-box + .calc-box {
+      margin-top: 24px;
+    }
+    /* Make sure result-box shows after calculate */
+    .result-box.show { display: block; }
+  </style>
+
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
@@ -76,11 +119,11 @@
   <div class="nav-inner">
     <div class="logo"><a href="/">⏱ CalcHeure</a></div>
     <nav class="desktop-nav" aria-label="Navigation principale">
-      <a href="/#calculator" class="">Calculatrice</a>
+      <a href="/#calculator">Calculatrice</a>
       <a href="/#outils" class="active">Outils</a>
-      <a href="/blog/" class="">Articles</a>
-      <a href="/a-propos/" class="">À propos</a>
-      <a href="/#faq" class="">FAQ</a>
+      <a href="/blog/">Articles</a>
+      <a href="/a-propos/">À propos</a>
+      <a href="/#faq">FAQ</a>
       <a href="/#calculator" class="nav-cta">Calculer →</a>
     </nav>
     <button class="theme-btn" onclick="toggleTheme()" aria-label="Changer de thème" id="theme-btn">☀️</button>
@@ -91,18 +134,18 @@
     </button>
   </div>
   <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile">
-    <a href="/#calculator" onclick="closeMobileNav()" class="">Calculatrice</a>
+    <a href="/#calculator" onclick="closeMobileNav()">Calculatrice</a>
     <a href="/#outils" onclick="closeMobileNav()" class="active">Outils</a>
-    <a href="/blog/" onclick="closeMobileNav()" class="">Articles</a>
-    <a href="/a-propos/" onclick="closeMobileNav()" class="">À propos</a>
-    <a href="/#faq" onclick="closeMobileNav()" class="">FAQ</a>
+    <a href="/blog/" onclick="closeMobileNav()">Articles</a>
+    <a href="/a-propos/" onclick="closeMobileNav()">À propos</a>
+    <a href="/#faq" onclick="closeMobileNav()">FAQ</a>
   </nav>
 </header>
 
 <main id="main-content">
 
 <div class="hero narrow">
-  <span class="hero-eyebrow">Conversion temps & calcul</span>
+  <span class="hero-eyebrow">Conversion temps &amp; calcul</span>
   <h1><span>Calculer un pourcentage</span> en ligne gratuitement</h1>
   <p>Pourcentage d'un nombre, pourcentage entre deux valeurs, augmentation ou réduction : quatre calculatrices simples, avec la formule et un exemple pour chacune.</p>
 </div>
@@ -116,20 +159,23 @@
     <div class="convert-grid">
       <div class="field-group">
         <label for="pct1-percent">Pourcentage</label>
-        <div class="pct-field-wrap"><input type="number" id="pct1-percent" placeholder="Ex. 20"><span class="pct-unit">%</span></div>
+        <div class="pct-field-wrap">
+          <input type="number" id="pct1-percent" placeholder="Ex. 20" min="0">
+          <span class="pct-unit" aria-hidden="true">%</span>
+        </div>
       </div>
       <div class="field-group">
-        <label for="pct1-number">du nombre</label>
+        <label for="pct1-number">Du nombre</label>
         <input type="number" id="pct1-number" placeholder="Ex. 150">
       </div>
     </div>
-    <div id="pct1-error" class="error-msg"></div>
+    <div id="pct1-error" class="error-msg" role="alert"></div>
     <div class="calc-actions">
-      <button class="btn-calc" data-label="Calculer" onclick="calcPercentOf(event)">Calculer</button>
-      <button class="btn-reset" onclick="resetPct1()">Réinitialiser</button>
+      <button class="btn-calc" onclick="calcPercentOf(event)">Calculer</button>
+      <button class="btn-reset" onclick="resetTool('pct1-percent','pct1-number','pct1-result','pct1-error','pct1-result-main','pct1-result-sub')">Réinitialiser</button>
     </div>
     <div class="result-box" id="pct1-result">
-      <button class="copy-btn" onclick="copyPercentResult('pct1-result-main')">Copier</button>
+      <button class="copy-btn" onclick="copyResult('pct1-result-main')">Copier</button>
       <div class="result-label">Résultat</div>
       <div class="result-main" id="pct1-result-main">–</div>
       <div class="result-sub" id="pct1-result-sub"></div>
@@ -149,13 +195,13 @@
         <input type="number" id="pct2-total" placeholder="Ex. 150">
       </div>
     </div>
-    <div id="pct2-error" class="error-msg"></div>
+    <div id="pct2-error" class="error-msg" role="alert"></div>
     <div class="calc-actions">
-      <button class="btn-calc" data-label="Calculer" onclick="calcPercentWhat(event)">Calculer</button>
-      <button class="btn-reset" onclick="resetPct2()">Réinitialiser</button>
+      <button class="btn-calc" onclick="calcPercentWhat(event)">Calculer</button>
+      <button class="btn-reset" onclick="resetTool('pct2-value','pct2-total','pct2-result','pct2-error','pct2-result-main','pct2-result-sub')">Réinitialiser</button>
     </div>
     <div class="result-box" id="pct2-result">
-      <button class="copy-btn" onclick="copyPercentResult('pct2-result-main')">Copier</button>
+      <button class="copy-btn" onclick="copyResult('pct2-result-main')">Copier</button>
       <div class="result-label">Résultat</div>
       <div class="result-main" id="pct2-result-main">–</div>
       <div class="result-sub" id="pct2-result-sub"></div>
@@ -172,16 +218,19 @@
       </div>
       <div class="field-group">
         <label for="pct3-percent">Augmentation de</label>
-        <div class="pct-field-wrap"><input type="number" id="pct3-percent" placeholder="Ex. 15"><span class="pct-unit">%</span></div>
+        <div class="pct-field-wrap">
+          <input type="number" id="pct3-percent" placeholder="Ex. 15" min="0">
+          <span class="pct-unit" aria-hidden="true">%</span>
+        </div>
       </div>
     </div>
-    <div id="pct3-error" class="error-msg"></div>
+    <div id="pct3-error" class="error-msg" role="alert"></div>
     <div class="calc-actions">
-      <button class="btn-calc" data-label="Calculer" onclick="calcPercentIncrease(event)">Calculer</button>
-      <button class="btn-reset" onclick="resetPct3()">Réinitialiser</button>
+      <button class="btn-calc" onclick="calcPercentIncrease(event)">Calculer</button>
+      <button class="btn-reset" onclick="resetTool('pct3-number','pct3-percent','pct3-result','pct3-error','pct3-result-main','pct3-result-sub')">Réinitialiser</button>
     </div>
     <div class="result-box" id="pct3-result">
-      <button class="copy-btn" onclick="copyPercentResult('pct3-result-main')">Copier</button>
+      <button class="copy-btn" onclick="copyResult('pct3-result-main')">Copier</button>
       <div class="result-label">Nouvelle valeur</div>
       <div class="result-main" id="pct3-result-main">–</div>
       <div class="result-sub" id="pct3-result-sub"></div>
@@ -198,16 +247,19 @@
       </div>
       <div class="field-group">
         <label for="pct4-percent">Réduction de</label>
-        <div class="pct-field-wrap"><input type="number" id="pct4-percent" placeholder="Ex. 20"><span class="pct-unit">%</span></div>
+        <div class="pct-field-wrap">
+          <input type="number" id="pct4-percent" placeholder="Ex. 20" min="0" max="100">
+          <span class="pct-unit" aria-hidden="true">%</span>
+        </div>
       </div>
     </div>
-    <div id="pct4-error" class="error-msg"></div>
+    <div id="pct4-error" class="error-msg" role="alert"></div>
     <div class="calc-actions">
-      <button class="btn-calc" data-label="Calculer" onclick="calcPercentDecrease(event)">Calculer</button>
-      <button class="btn-reset" onclick="resetPct4()">Réinitialiser</button>
+      <button class="btn-calc" onclick="calcPercentDecrease(event)">Calculer</button>
+      <button class="btn-reset" onclick="resetTool('pct4-number','pct4-percent','pct4-result','pct4-error','pct4-result-main','pct4-result-sub')">Réinitialiser</button>
     </div>
     <div class="result-box" id="pct4-result">
-      <button class="copy-btn" onclick="copyPercentResult('pct4-result-main')">Copier</button>
+      <button class="copy-btn" onclick="copyResult('pct4-result-main')">Copier</button>
       <div class="result-label">Nouvelle valeur</div>
       <div class="result-main" id="pct4-result-main">–</div>
       <div class="result-sub" id="pct4-result-sub"></div>
@@ -252,10 +304,10 @@
   <h2 id="faq">Questions fréquentes</h2>
   <div class="grid grid-2">
     <div class="card"><h3>Comment calculer un pourcentage sans calculatrice ?</h3><p>Pour les pourcentages ronds (10 %, 25 %, 50 %), il suffit de diviser mentalement : 10 % revient à diviser par 10, 50 % à diviser par 2. Pour des valeurs moins rondes, la formule (Pourcentage × Nombre) ÷ 100 reste la plus fiable.</p></div>
-    <div class="card"><h3>Pourquoi mon résultat de réduction est-il négatif ?</h3><p>Si le taux de réduction saisi dépasse 100 %, le résultat devient négatif, ce qui n'a pas de sens pour la plupart des grandeurs réelles (un prix ne peut pas être négatif). Vérifiez que le taux saisi est bien compris entre 0 et 100.</p></div>
+    <div class="card"><h3>Pourquoi mon résultat de réduction est-il négatif ?</h3><p>Si le taux de réduction saisi dépasse 100 %, le résultat devient négatif, ce qui n'a pas de sens pour la plupart des grandeurs réelles. Vérifiez que le taux saisi est bien compris entre 0 et 100.</p></div>
     <div class="card"><h3>Quelle est la différence entre une augmentation de 50 % puis une réduction de 50 % ?</h3><p>Les deux ne s'annulent pas. Augmenter 100 de 50 % donne 150 ; réduire ensuite 150 de 50 % donne 75, et non 100. C'est parce que le second pourcentage s'applique à une base différente.</p></div>
-    <div class="card"><h3>Comment calculer plusieurs pourcentages successifs ?</h3><p>Chaque pourcentage s'applique au résultat du calcul précédent, et non à la valeur de départ initiale. Il faut donc enchaîner les calculs un par un, comme dans l'exemple ci-dessus.</p></div>
-    <div class="card"><h3>Le pourcentage et le taux d'évolution, c'est pareil ?</h3><p>Non. Un pourcentage exprime une proportion à un instant donné (X % d'un total), tandis qu'un taux d'évolution mesure une variation entre deux valeurs dans le temps, par exemple l'évolution d'un salaire ou d'un chiffre d'affaires d'une année sur l'autre.</p></div>
+    <div class="card"><h3>Comment calculer plusieurs pourcentages successifs ?</h3><p>Chaque pourcentage s'applique au résultat du calcul précédent, et non à la valeur de départ initiale. Il faut donc enchaîner les calculs un par un.</p></div>
+    <div class="card"><h3>Le pourcentage et le taux d'évolution, c'est pareil ?</h3><p>Non. Un pourcentage exprime une proportion à un instant donné (X % d'un total), tandis qu'un taux d'évolution mesure une variation entre deux valeurs dans le temps, par exemple l'évolution d'un chiffre d'affaires d'une année sur l'autre.</p></div>
   </div>
 </section>
 
@@ -317,6 +369,7 @@
     </div>
   </div>
 </footer>
+
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="/assets/js/app.js" defer></script>
 <script>
@@ -327,16 +380,30 @@
 
   function showError(id, msg) {
     var el = document.getElementById(id);
-    if (el) el.textContent = msg || '';
+    if (el) { el.textContent = msg || ''; el.style.display = msg ? 'block' : 'none'; }
   }
 
-  function copyPercentResult(id) {
+  function showResult(boxId) {
+    var box = document.getElementById(boxId);
+    if (box) box.classList.add('show');
+  }
+
+  function copyResult(id) {
     var el = document.getElementById(id);
     if (!el) return;
     navigator.clipboard.writeText(el.textContent.trim()).then(function () {
       var t = document.getElementById('toast');
       if (t) { t.textContent = 'Copié !'; t.classList.add('show'); setTimeout(function(){ t.classList.remove('show'); }, 1800); }
     });
+  }
+
+  function resetTool(id1, id2, resultId, errorId, mainId, subId) {
+    document.getElementById(id1).value = '';
+    document.getElementById(id2).value = '';
+    document.getElementById(mainId).textContent = '–';
+    document.getElementById(subId).textContent = '';
+    document.getElementById(resultId).classList.remove('show');
+    showError(errorId, '');
   }
 
   // TOOL 1: X% of a number
@@ -349,13 +416,7 @@
     var result = (p * n) / 100;
     document.getElementById('pct1-result-main').textContent = fmt(result);
     document.getElementById('pct1-result-sub').textContent = p + ' % de ' + n + ' = ' + fmt(result);
-  }
-  function resetPct1() {
-    document.getElementById('pct1-percent').value = '';
-    document.getElementById('pct1-number').value = '';
-    document.getElementById('pct1-result-main').textContent = '–';
-    document.getElementById('pct1-result-sub').textContent = '';
-    showError('pct1-error', '');
+    showResult('pct1-result');
   }
 
   // TOOL 2: value is what % of total
@@ -369,13 +430,7 @@
     var result = (v / t) * 100;
     document.getElementById('pct2-result-main').textContent = fmt(result) + ' %';
     document.getElementById('pct2-result-sub').textContent = v + ' sur ' + t + ' = ' + fmt(result) + ' %';
-  }
-  function resetPct2() {
-    document.getElementById('pct2-value').value = '';
-    document.getElementById('pct2-total').value = '';
-    document.getElementById('pct2-result-main').textContent = '–';
-    document.getElementById('pct2-result-sub').textContent = '';
-    showError('pct2-error', '');
+    showResult('pct2-result');
   }
 
   // TOOL 3: increase by %
@@ -389,13 +444,7 @@
     var result = n + added;
     document.getElementById('pct3-result-main').textContent = fmt(result);
     document.getElementById('pct3-result-sub').textContent = n + ' + ' + p + ' % (' + fmt(added) + ') = ' + fmt(result);
-  }
-  function resetPct3() {
-    document.getElementById('pct3-number').value = '';
-    document.getElementById('pct3-percent').value = '';
-    document.getElementById('pct3-result-main').textContent = '–';
-    document.getElementById('pct3-result-sub').textContent = '';
-    showError('pct3-error', '');
+    showResult('pct3-result');
   }
 
   // TOOL 4: decrease by %
@@ -409,13 +458,7 @@
     var result = n - removed;
     document.getElementById('pct4-result-main').textContent = fmt(result);
     document.getElementById('pct4-result-sub').textContent = n + ' − ' + p + ' % (' + fmt(removed) + ') = ' + fmt(result);
-  }
-  function resetPct4() {
-    document.getElementById('pct4-number').value = '';
-    document.getElementById('pct4-percent').value = '';
-    document.getElementById('pct4-result-main').textContent = '–';
-    document.getElementById('pct4-result-sub').textContent = '';
-    showError('pct4-error', '');
+    showResult('pct4-result');
   }
 </script>
 </body>
