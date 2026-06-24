@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculer un pourcentage en ligne | Outil gratuit avec exemples</title>
+  <meta name="description" content="Calculez un pourcentage en ligne gratuitement : pourcentage d'un nombre, augmentation, réduction et taux d'évolution. Formules, exemples et calculatrices simples.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="canonical" href="https://heurejour.com/calculer-un-pourcentage/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Calculer un pourcentage en ligne | Outil gratuit avec exemples">
+  <meta property="og:description" content="Calculez un pourcentage en ligne gratuitement : pourcentage d'un nombre, augmentation, réduction et taux d'évolution. Formules, exemples et calculatrices simples.">
+  <meta property="og:url" content="https://heurejour.com/calculer-un-pourcentage/">
+  <meta property="og:site_name" content="CalcHeure">
+  <meta property="og:image" content="https://www.heurejour.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Calculer un pourcentage en ligne | Outil gratuit avec exemples">
+  <meta name="twitter:description" content="Calculez un pourcentage en ligne gratuitement : pourcentage d'un nombre, augmentation, réduction et taux d'évolution.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="alternate icon" href="/favicon.ico">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="/favicon-180.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Calculer un pourcentage",
+    "url": "https://heurejour.com/calculer-un-pourcentage/",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Comment calculer un pourcentage simplement ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Pour calculer X % d'un nombre, multipliez ce nombre par X puis divisez par 100. Par exemple, 20 % de 150 se calcule ainsi : 150 × 20 ÷ 100 = 30." }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment calculer le pourcentage qu'une valeur représente d'un total ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Divisez la valeur partielle par le total, puis multipliez par 100. Exemple : 30 sur un total de 150 représente (30 ÷ 150) × 100 = 20 %." }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment calculer une augmentation en pourcentage ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Multipliez la valeur de départ par (1 + le taux d'augmentation ÷ 100). Exemple : augmenter 100 de 15 % donne 100 × 1,15 = 115." }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment calculer une réduction en pourcentage ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Multipliez la valeur de départ par (1 − le taux de réduction ÷ 100). Exemple : réduire 100 de 20 % donne 100 × 0,80 = 80." }
+      },
+      {
+        "@type": "Question",
+        "name": "Quelle est la différence entre pourcentage et taux d'évolution ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Un pourcentage exprime une proportion (X % d'un total), tandis qu'un taux d'évolution mesure la variation relative entre deux valeurs dans le temps, calculée par ((valeur finale − valeur initiale) ÷ valeur initiale) × 100." }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Aller au contenu principal</a>
+<header class="site-header">
+  <div class="nav-inner">
+    <div class="logo"><a href="/">⏱ CalcHeure</a></div>
+    <nav class="desktop-nav" aria-label="Navigation principale">
+      <a href="/#calculator" class="">Calculatrice</a>
+      <a href="/#outils" class="active">Outils</a>
+      <a href="/blog/" class="">Articles</a>
+      <a href="/a-propos/" class="">À propos</a>
+      <a href="/#faq" class="">FAQ</a>
+      <a href="/#calculator" class="nav-cta">Calculer →</a>
+    </nav>
+    <button class="theme-btn" onclick="toggleTheme()" aria-label="Changer de thème" id="theme-btn">☀️</button>
+    <button class="hamburger" onclick="toggleMobileNav()" aria-label="Menu" aria-expanded="false" id="hamburger">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile">
+    <a href="/#calculator" onclick="closeMobileNav()" class="">Calculatrice</a>
+    <a href="/#outils" onclick="closeMobileNav()" class="active">Outils</a>
+    <a href="/blog/" onclick="closeMobileNav()" class="">Articles</a>
+    <a href="/a-propos/" onclick="closeMobileNav()" class="">À propos</a>
+    <a href="/#faq" onclick="closeMobileNav()" class="">FAQ</a>
+  </nav>
+</header>
+
+<main id="main-content">
+
+<div class="hero narrow">
+  <span class="hero-eyebrow">Conversion temps & calcul</span>
+  <h1><span>Calculer un pourcentage</span> en ligne gratuitement</h1>
+  <p>Pourcentage d'un nombre, pourcentage entre deux valeurs, augmentation ou réduction : quatre calculatrices simples, avec la formule et un exemple pour chacune.</p>
+</div>
+
+<section id="calculator" aria-labelledby="calc-section-title" class="section-compact">
+  <h2 id="calc-section-title" class="sr-only">Calculatrices de pourcentage en ligne</h2>
+
+  <!-- TOOL 1 -->
+  <div class="calc-box" id="tool-pct-of">
+    <p class="panel-title">Calculer X % d'un nombre</p>
+    <div class="convert-grid">
+      <div class="field-group">
+        <label for="pct1-percent">Pourcentage</label>
+        <div class="field-wrap"><input type="number" id="pct1-percent" placeholder="Ex. 20"><span class="time-unit">%</span></div>
+      </div>
+      <div class="field-group">
+        <label for="pct1-number">du nombre</label>
+        <input type="number" id="pct1-number" placeholder="Ex. 150">
+      </div>
+    </div>
+    <div id="pct1-error" class="error-msg"></div>
+    <div class="calc-actions">
+      <button class="btn-calc" data-label="Calculer" onclick="calcPercentOf(event)">Calculer</button>
+      <button class="btn-reset" onclick="resetPct1()">Réinitialiser</button>
+    </div>
+    <div class="result-box" id="pct1-result">
+      <button class="copy-btn" onclick="copyPercentResult('pct1-result-main')">Copier</button>
+      <div class="result-label">Résultat</div>
+      <div class="result-main" id="pct1-result-main">–</div>
+      <div class="result-sub" id="pct1-result-sub"></div>
+    </div>
+  </div>
+
+  <!-- TOOL 2 -->
+  <div class="calc-box" id="tool-pct-what">
+    <p class="panel-title">Quel pourcentage représente une valeur ?</p>
+    <div class="convert-grid">
+      <div class="field-group">
+        <label for="pct2-value">Valeur</label>
+        <input type="number" id="pct2-value" placeholder="Ex. 30">
+      </div>
+      <div class="field-group">
+        <label for="pct2-total">Sur un total de</label>
+        <input type="number" id="pct2-total" placeholder="Ex. 150">
+      </div>
+    </div>
+    <div id="pct2-error" class="error-msg"></div>
+    <div class="calc-actions">
+      <button class="btn-calc" data-label="Calculer" onclick="calcPercentWhat(event)">Calculer</button>
+      <button class="btn-reset" onclick="resetPct2()">Réinitialiser</button>
+    </div>
+    <div class="result-box" id="pct2-result">
+      <button class="copy-btn" onclick="copyPercentResult('pct2-result-main')">Copier</button>
+      <div class="result-label">Résultat</div>
+      <div class="result-main" id="pct2-result-main">–</div>
+      <div class="result-sub" id="pct2-result-sub"></div>
+    </div>
+  </div>
+
+  <!-- TOOL 3 -->
+  <div class="calc-box" id="tool-pct-increase">
+    <p class="panel-title">Calculer une augmentation en %</p>
+    <div class="convert-grid">
+      <div class="field-group">
+        <label for="pct3-number">Valeur de départ</label>
+        <input type="number" id="pct3-number" placeholder="Ex. 100">
+      </div>
+      <div class="field-group">
+        <label for="pct3-percent">Augmentation de</label>
+        <div class="field-wrap"><input type="number" id="pct3-percent" placeholder="Ex. 15"><span class="time-unit">%</span></div>
+      </div>
+    </div>
+    <div id="pct3-error" class="error-msg"></div>
+    <div class="calc-actions">
+      <button class="btn-calc" data-label="Calculer" onclick="calcPercentIncrease(event)">Calculer</button>
+      <button class="btn-reset" onclick="resetPct3()">Réinitialiser</button>
+    </div>
+    <div class="result-box" id="pct3-result">
+      <button class="copy-btn" onclick="copyPercentResult('pct3-result-main')">Copier</button>
+      <div class="result-label">Nouvelle valeur</div>
+      <div class="result-main" id="pct3-result-main">–</div>
+      <div class="result-sub" id="pct3-result-sub"></div>
+    </div>
+  </div>
+
+  <!-- TOOL 4 -->
+  <div class="calc-box" id="tool-pct-decrease">
+    <p class="panel-title">Calculer une réduction en %</p>
+    <div class="convert-grid">
+      <div class="field-group">
+        <label for="pct4-number">Valeur de départ</label>
+        <input type="number" id="pct4-number" placeholder="Ex. 100">
+      </div>
+      <div class="field-group">
+        <label for="pct4-percent">Réduction de</label>
+        <div class="field-wrap"><input type="number" id="pct4-percent" placeholder="Ex. 20"><span class="time-unit">%</span></div>
+      </div>
+    </div>
+    <div id="pct4-error" class="error-msg"></div>
+    <div class="calc-actions">
+      <button class="btn-calc" data-label="Calculer" onclick="calcPercentDecrease(event)">Calculer</button>
+      <button class="btn-reset" onclick="resetPct4()">Réinitialiser</button>
+    </div>
+    <div class="result-box" id="pct4-result">
+      <button class="copy-btn" onclick="copyPercentResult('pct4-result-main')">Copier</button>
+      <div class="result-label">Nouvelle valeur</div>
+      <div class="result-main" id="pct4-result-main">–</div>
+      <div class="result-sub" id="pct4-result-sub"></div>
+    </div>
+  </div>
+
+</section>
+
+<section aria-labelledby="explain-title">
+  <h2 id="explain-title">Comment calculer un pourcentage ?</h2>
+  <p>Un pourcentage exprime une proportion par rapport à un ensemble de 100 unités. Le symbole % se lit « pour cent » : dire qu'une valeur représente 20 % d'un total revient à dire qu'elle correspond à 20 unités sur chaque tranche de 100. C'est pour cette raison que les pourcentages sont si pratiques : ils permettent de comparer des grandeurs très différentes (un prix, une note, une population, un taux d'intérêt) sur une même échelle commune.</p>
+  <p>Au quotidien, ce type de calcul revient dans des situations très variées : une remise en magasin, une TVA à ajouter à un prix, une note d'examen à convertir, une augmentation de salaire annoncée par un employeur, ou encore le suivi de l'évolution d'un chiffre d'affaires d'une année sur l'autre. Les quatre calculatrices ci-dessus couvrent les cas les plus fréquents ; les sections suivantes détaillent la formule et un exemple pour chacun.</p>
+
+  <h2>Calculer un pourcentage d'un nombre</h2>
+  <p>C'est le calcul de pourcentage le plus courant : trouver combien représente X % d'une valeur donnée. La formule est la suivante :</p>
+  <div class="grid grid-2">
+    <div class="card"><h3>Formule</h3><p>Pourcentage (%) × Nombre ÷ 100 = Résultat</p></div>
+    <div class="card"><h3>Exemple</h3><p>20 % de 150 : 150 × 20 ÷ 100 = 30. Vingt pour cent de 150 équivaut donc à 30.</p></div>
+  </div>
+
+  <h2>Calculer un pourcentage entre deux nombres</h2>
+  <p>Ici, l'objectif est inverse : on connaît une valeur partielle et un total, et on veut savoir quel pourcentage cette valeur représente. C'est utile par exemple pour calculer un taux de réussite, une part de marché, ou un taux de participation.</p>
+  <div class="grid grid-2">
+    <div class="card"><h3>Formule</h3><p>(Valeur partielle ÷ Total) × 100 = Pourcentage</p></div>
+    <div class="card"><h3>Exemple</h3><p>30 sur un total de 150 : (30 ÷ 150) × 100 = 20 %. La valeur 30 représente donc 20 % du total.</p></div>
+  </div>
+
+  <h2>Calculer une augmentation en pourcentage</h2>
+  <p>Pour augmenter une valeur d'un certain pourcentage — une hausse de prix, une augmentation de salaire, une progression d'un indicateur — il suffit d'ajouter le pourcentage correspondant à la valeur de départ.</p>
+  <div class="grid grid-2">
+    <div class="card"><h3>Formule</h3><p>Valeur de départ × (1 + Taux ÷ 100) = Nouvelle valeur</p></div>
+    <div class="card"><h3>Exemple</h3><p>Augmenter 100 de 15 % : 100 × (1 + 15 ÷ 100) = 100 × 1,15 = 115.</p></div>
+  </div>
+
+  <h2>Calculer une réduction en pourcentage</h2>
+  <p>Le principe est symétrique pour une baisse : une remise commerciale, une diminution de prix ou une perte de valeur se calculent en soustrayant le pourcentage de la valeur de départ.</p>
+  <div class="grid grid-2">
+    <div class="card"><h3>Formule</h3><p>Valeur de départ × (1 − Taux ÷ 100) = Nouvelle valeur</p></div>
+    <div class="card"><h3>Exemple</h3><p>Réduire 100 de 20 % : 100 × (1 − 20 ÷ 100) = 100 × 0,80 = 80.</p></div>
+  </div>
+
+  <h2 id="faq">Questions fréquentes</h2>
+  <div class="grid grid-2">
+    <div class="card"><h3>Comment calculer un pourcentage sans calculatrice ?</h3><p>Pour les pourcentages ronds (10 %, 25 %, 50 %), il suffit de diviser mentalement : 10 % revient à diviser par 10, 50 % à diviser par 2. Pour des valeurs moins rondes, la formule (Pourcentage × Nombre) ÷ 100 reste la plus fiable.</p></div>
+    <div class="card"><h3>Pourquoi mon résultat de réduction est-il négatif ?</h3><p>Si le taux de réduction saisi dépasse 100 %, le résultat devient négatif, ce qui n'a pas de sens pour la plupart des grandeurs réelles (un prix ne peut pas être négatif). Vérifiez que le taux saisi est bien compris entre 0 et 100.</p></div>
+    <div class="card"><h3>Quelle est la différence entre une augmentation de 50 % puis une réduction de 50 % ?</h3><p>Les deux ne s'annulent pas. Augmenter 100 de 50 % donne 150 ; réduire ensuite 150 de 50 % donne 75, et non 100. C'est parce que le second pourcentage s'applique à une base différente.</p></div>
+    <div class="card"><h3>Comment calculer plusieurs pourcentages successifs ?</h3><p>Chaque pourcentage s'applique au résultat du calcul précédent, et non à la valeur de départ initiale. Il faut donc enchaîner les calculs un par un, comme dans l'exemple ci-dessus.</p></div>
+    <div class="card"><h3>Le pourcentage et le taux d'évolution, c'est pareil ?</h3><p>Non. Un pourcentage exprime une proportion à un instant donné (X % d'un total), tandis qu'un taux d'évolution mesure une variation entre deux valeurs dans le temps, par exemple l'évolution d'un salaire ou d'un chiffre d'affaires d'une année sur l'autre.</p></div>
+  </div>
+</section>
+
+<section aria-labelledby="related-tools-title">
+  <h2 id="related-tools-title">D'autres outils de calcul sur CalcHeure</h2>
+  <div class="grid grid-2">
+    <div class="card"><h3><a href="/difference-entre-deux-dates/">Différence entre deux dates</a></h3><p>Calculez le nombre de jours, mois ou années entre deux dates.</p></div>
+    <div class="card"><h3><a href="/salaire-horaire/">Salaire horaire</a></h3><p>Convertissez un salaire annuel ou mensuel en taux horaire.</p></div>
+    <div class="card"><h3><a href="/calcul-heures-travail/">Calcul heures de travail</a></h3><p>Additionnez vos heures travaillées sur la semaine ou le mois.</p></div>
+    <div class="card"><h3><a href="/convertisseur-minutes-heures/">Convertisseur minutes heures</a></h3><p>Convertissez minutes, heures, secondes et jours entre eux.</p></div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo"><a href="/">⏱ CalcHeure</a></div>
+      <p>Calculatrice heure en ligne gratuite pour additionner, soustraire, convertir et mieux comprendre les durées.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Outils</h4>
+      <ul>
+        <li><a href="/">Calcul heure</a></li>
+        <li><a href="/calcul-heures-travail/">Calcul heures de travail</a></li>
+        <li><a href="/convertisseur-minutes-heures/">Convertisseur minutes heures</a></li>
+        <li><a href="/salaire-horaire/">Salaire horaire</a></li>
+        <li><a href="/calculer-un-pourcentage/">Calculer un pourcentage</a></li>
+        <li><a href="/difference-entre-deux-dates/">Différence entre deux dates</a></li>
+        <li><a href="/feuille-de-presence/">Feuille de présence</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Articles</h4>
+      <ul>
+        <li><a href="/blog/calcul-heures-travail/">Calcul des heures de travail</a></li>
+        <li><a href="/blog/convertir-minutes-heures/">Convertir minutes en heures</a></li>
+        <li><a href="/blog/gestion-du-temps-freelance/">Gestion du temps freelance</a></li>
+        <li><a href="/blog/taux-horaire-net-brut/">Taux horaire net à partir du brut</a></li>
+        <li><a href="/blog/calcul-heures-de-nuit/">Calcul heures de nuit</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Confiance</h4>
+      <ul>
+        <li><a href="/a-propos/">À propos</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/politique-confidentialite/">Confidentialité</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 CalcHeure. Calculatrice heure gratuite en ligne. Tous droits réservés.</p>
+    <div class="footer-links">
+      <a href="/politique-confidentialite/">Confidentialité</a>
+      <a href="/contact/">Contact</a>
+      <a href="/sitemap.xml">Plan du site</a>
+    </div>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/assets/js/app.js" defer></script>
+<script>
+  function fmt(n) {
+    if (!isFinite(n)) return '–';
+    return Number(n.toFixed(4)).toLocaleString('fr-FR', { maximumFractionDigits: 4 });
+  }
+
+  function showError(id, msg) {
+    var el = document.getElementById(id);
+    if (el) el.textContent = msg || '';
+  }
+
+  function copyPercentResult(id) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    navigator.clipboard.writeText(el.textContent.trim()).then(function () {
+      var t = document.getElementById('toast');
+      if (t) { t.textContent = 'Copié !'; t.classList.add('show'); setTimeout(function(){ t.classList.remove('show'); }, 1800); }
+    });
+  }
+
+  // TOOL 1: X% of a number
+  function calcPercentOf(e) {
+    e.preventDefault();
+    showError('pct1-error', '');
+    var p = parseFloat(document.getElementById('pct1-percent').value);
+    var n = parseFloat(document.getElementById('pct1-number').value);
+    if (isNaN(p) || isNaN(n)) { showError('pct1-error', 'Veuillez saisir les deux valeurs.'); return; }
+    var result = (p * n) / 100;
+    document.getElementById('pct1-result-main').textContent = fmt(result);
+    document.getElementById('pct1-result-sub').textContent = p + ' % de ' + n + ' = ' + fmt(result);
+  }
+  function resetPct1() {
+    document.getElementById('pct1-percent').value = '';
+    document.getElementById('pct1-number').value = '';
+    document.getElementById('pct1-result-main').textContent = '–';
+    document.getElementById('pct1-result-sub').textContent = '';
+    showError('pct1-error', '');
+  }
+
+  // TOOL 2: value is what % of total
+  function calcPercentWhat(e) {
+    e.preventDefault();
+    showError('pct2-error', '');
+    var v = parseFloat(document.getElementById('pct2-value').value);
+    var t = parseFloat(document.getElementById('pct2-total').value);
+    if (isNaN(v) || isNaN(t)) { showError('pct2-error', 'Veuillez saisir les deux valeurs.'); return; }
+    if (t === 0) { showError('pct2-error', 'Le total ne peut pas être égal à zéro.'); return; }
+    var result = (v / t) * 100;
+    document.getElementById('pct2-result-main').textContent = fmt(result) + ' %';
+    document.getElementById('pct2-result-sub').textContent = v + ' sur ' + t + ' = ' + fmt(result) + ' %';
+  }
+  function resetPct2() {
+    document.getElementById('pct2-value').value = '';
+    document.getElementById('pct2-total').value = '';
+    document.getElementById('pct2-result-main').textContent = '–';
+    document.getElementById('pct2-result-sub').textContent = '';
+    showError('pct2-error', '');
+  }
+
+  // TOOL 3: increase by %
+  function calcPercentIncrease(e) {
+    e.preventDefault();
+    showError('pct3-error', '');
+    var n = parseFloat(document.getElementById('pct3-number').value);
+    var p = parseFloat(document.getElementById('pct3-percent').value);
+    if (isNaN(n) || isNaN(p)) { showError('pct3-error', 'Veuillez saisir les deux valeurs.'); return; }
+    var added = (n * p) / 100;
+    var result = n + added;
+    document.getElementById('pct3-result-main').textContent = fmt(result);
+    document.getElementById('pct3-result-sub').textContent = n + ' + ' + p + ' % (' + fmt(added) + ') = ' + fmt(result);
+  }
+  function resetPct3() {
+    document.getElementById('pct3-number').value = '';
+    document.getElementById('pct3-percent').value = '';
+    document.getElementById('pct3-result-main').textContent = '–';
+    document.getElementById('pct3-result-sub').textContent = '';
+    showError('pct3-error', '');
+  }
+
+  // TOOL 4: decrease by %
+  function calcPercentDecrease(e) {
+    e.preventDefault();
+    showError('pct4-error', '');
+    var n = parseFloat(document.getElementById('pct4-number').value);
+    var p = parseFloat(document.getElementById('pct4-percent').value);
+    if (isNaN(n) || isNaN(p)) { showError('pct4-error', 'Veuillez saisir les deux valeurs.'); return; }
+    var removed = (n * p) / 100;
+    var result = n - removed;
+    document.getElementById('pct4-result-main').textContent = fmt(result);
+    document.getElementById('pct4-result-sub').textContent = n + ' − ' + p + ' % (' + fmt(removed) + ') = ' + fmt(result);
+  }
+  function resetPct4() {
+    document.getElementById('pct4-number').value = '';
+    document.getElementById('pct4-percent').value = '';
+    document.getElementById('pct4-result-main').textContent = '–';
+    document.getElementById('pct4-result-sub').textContent = '';
+    showError('pct4-error', '');
+  }
+</script>
+</body>
+</html>
