@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Calculer un pourcentage en ligne | Outil gratuit avec exemples</title>
+  <title>Calcul pourcentage​ en ligne |Calculer pourcentage gratuit</title>
   <meta name="description" content="Calculez un pourcentage en ligne gratuitement : pourcentage d'un nombre, augmentation, réduction et taux d'évolution. Formules, exemples et calculatrices simples.">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#0d1117">
@@ -65,6 +65,21 @@
         "@type": "Question",
         "name": "Quelle est la différence entre pourcentage et taux d'évolution ?",
         "acceptedAnswer": { "@type": "Answer", "text": "Un pourcentage exprime une proportion (X % d'un total), tandis qu'un taux d'évolution mesure la variation relative entre deux valeurs dans le temps, calculée par ((valeur finale − valeur initiale) ÷ valeur initiale) × 100." }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment faire un calcul pourcentage ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Un calcul pourcentage se fait en multipliant la valeur de référence par le pourcentage souhaité, puis en divisant par 100." }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment calculer un pourcentage rapidement ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Pour calculer un pourcentage rapidement, utilisez une calculatrice de pourcentage en ligne : saisissez vos valeurs et le résultat s'affiche instantanément." }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment calculer un pourcentage d'évolution ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Le pourcentage d'évolution se calcule avec la formule ((valeur finale − valeur initiale) ÷ valeur initiale) × 100." }
       }
     ]
   }
@@ -104,7 +119,7 @@
 <div class="hero narrow">
   <span class="hero-eyebrow">Conversion temps &amp; calcul</span>
   <h1><span>Calculer un pourcentage</span> en ligne gratuitement</h1>
-  <p>Pourcentage d'un nombre, pourcentage entre deux valeurs, augmentation ou réduction : quatre calculatrices simples, avec la formule et un exemple pour chacune.</p>
+  <p>Notre outil de calcul pourcentage permet de calculer un pourcentage, de réaliser un pourcentage calcul simple, de trouver le pourcentage d'une valeur, ainsi que de calculer une augmentation ou une réduction. Quatre calculatrices simples, avec la formule et un exemple pour chacune.</p>
 </div>
 
 <!-- CALCULATORS -->
@@ -135,7 +150,7 @@
     </div>
     <div class="result-box" id="pct1-result">
       <button class="copy-btn" onclick="copyResult('pct1-result-main')">Copier</button>
-      <div class="result-label">Résultat</div>
+      <div class="result-label">Résultat du calcul pourcentage</div>
       <div class="result-main" id="pct1-result-main">–</div>
       <div class="result-sub" id="pct1-result-sub"></div>
     </div>
@@ -267,6 +282,23 @@
   </div>
 </section>
 
+<!-- METHODE SIMPLE -->
+<section aria-labelledby="methode-title">
+  <div class="section-head">
+    <h2 id="methode-title">Calcul pourcentage : méthode simple</h2>
+    <p>Le calcul pourcentage consiste à déterminer la part d'une valeur par rapport à un total. Cette méthode est utilisée pour les remises, la TVA, les augmentations de salaire et le pourcentage d'évolution.</p>
+  </div>
+</section>
+
+<!-- POURCENTAGE D'EVOLUTION -->
+<section aria-labelledby="evolution-title">
+  <div class="section-head">
+    <h2 id="evolution-title">Pourcentage d'évolution</h2>
+    <p>Le pourcentage d'évolution permet de mesurer une hausse ou une baisse entre deux valeurs. Il est souvent utilisé pour suivre l'évolution d'un salaire, d'un prix ou d'un chiffre d'affaires.</p>
+    <p><strong>Formule :</strong> ((Valeur finale − Valeur initiale) ÷ Valeur initiale) × 100</p>
+  </div>
+</section>
+
 <!-- FAQ -->
 <section aria-labelledby="faq-title">
   <div class="section-head">
@@ -307,7 +339,26 @@
         Le pourcentage et le taux d'évolution, c'est pareil ?
         <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
       </button>
-      <div class="faq-a">Non. Un pourcentage exprime une proportion à un instant donné (X % d'un total), tandis qu'un taux d'évolution mesure une variation entre deux valeurs dans le temps : ((valeur finale − valeur initiale) ÷ valeur initiale) × 100.</div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+        Comment faire un calcul pourcentage ?
+        <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-a">Un calcul pourcentage se fait en multipliant la valeur de référence par le pourcentage souhaité, puis en divisant par 100. Utilisez l'outil ci-dessus pour calculer un pourcentage automatiquement.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+        Comment calculer un pourcentage rapidement ?
+        <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-a">Pour calculer un pourcentage rapidement sans poser le calcul, utilisez directement nos calculatrices en haut de page : saisissez vos valeurs et le résultat s'affiche instantanément.</div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
+        Comment calculer un pourcentage d'évolution ?
+        <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
+      </button>
+      <div class="faq-a">Le pourcentage d'évolution se calcule avec la formule ((valeur finale − valeur initiale) ÷ valeur initiale) × 100. Il indique la variation relative entre deux valeurs, par exemple un prix avant et après une hausse.</div>
     </div>
   </div>
 </section>
