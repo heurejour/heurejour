@@ -339,6 +339,8 @@
         Le pourcentage et le taux d'évolution, c'est pareil ?
         <svg class="faq-chevron" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><polyline points="6 9 12 15 18 9"/></svg>
       </button>
+	  <div class="faq-a">Non. Un pourcentage exprime une proportion (ex. 30 % de 200). Le taux d'évolution mesure une variation relative entre deux valeurs dans le temps.</div>
+    </div>
     <div class="faq-item">
       <button class="faq-q" onclick="toggleFaq(this)" aria-expanded="false">
         Comment faire un calcul pourcentage ?
@@ -473,11 +475,16 @@
     document.getElementById(resultId).classList.remove('show');
     showError(errorId, '');
   }
-  function toggleFaq(btn) {
-    var item = btn.closest('.faq-item');
-    var isOpen = item.classList.contains('open');
-    item.classList.toggle('open', !isOpen);
-    btn.setAttribute('aria-expanded', !isOpen);
+ function toggleFaq(btn) {
+    var isOpen = btn.getAttribute('aria-expanded') === 'true';
+    document.querySelectorAll('.faq-q').forEach(function(b) {
+      b.setAttribute('aria-expanded', 'false');
+      b.closest('.faq-item').classList.remove('open');
+    });
+    if (!isOpen) {
+      btn.setAttribute('aria-expanded', 'true');
+      btn.closest('.faq-item').classList.add('open');
+    }
   }
   function calcPercentOf(e) {
     e.preventDefault();
