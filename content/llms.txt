@@ -1,7 +1,24 @@
-This website provides free time calculation tools.
-Features:
-- Time addition and subtraction
-- Time conversion
-- Work hours calculation
-- Productivity tools
-- SEO optimized utility pages
+# CalcHeure: heurejour.com
+
+CalcHeure is a free French-language time and calculation tool suite, designed for employees, freelancers, and HR professionals.
+
+## Tools
+- Work hours calculator (with midnight crossing support for night shifts)
+- Minutes-to-hours converter
+- Hourly salary calculator
+- Date difference calculator
+- Online timer
+- Attendance sheet generator
+- Percentage calculator (increase, decrease, ratio, evolution)
+
+## Content
+- French-language blog covering time management, payroll calculation, and productivity
+- Each tool page includes formulas, worked examples, and FAQ sections
+
+## Audience
+French-speaking workers, freelancers, and HR teams seeking fast, accurate time and salary calculations.
+
+## Technical
+- Static site deployed on Vercel
+- SEO-optimized pages with schema markup (WebApplication, FAQPage)
+- No login required — all tools run client-side in the browser
