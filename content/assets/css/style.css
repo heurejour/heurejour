@@ -55,19 +55,20 @@ img,svg{max-width:100%;height:auto}
 .mobile-nav.open{display:flex}
 .mobile-nav a{color:var(--muted);font-weight:650;padding:11px 12px;border-radius:10px}
 .mobile-nav a:hover,.mobile-nav a.active{color:var(--text);background:var(--card);text-decoration:none}
-.hero{padding:74px 22px 50px;background:radial-gradient(ellipse 80% 52% at 50% 0%,rgba(59,130,246,.18),transparent 72%);text-align:center}
+.hero{background:linear-gradient(180deg,#f8fbff 0%,#ffffff 100%);padding:80px 20px 60px;}
 .hero.narrow{padding-bottom:42px}
 .hero-eyebrow{display:inline-flex;gap:8px;align-items:center;background:rgba(59,130,246,.13);border:1px solid rgba(59,130,246,.33);color:#60a5fa;font-size:.76rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;padding:5px 15px;border-radius:999px;margin-bottom:20px}
 .hero h1{font-family:var(--fh);font-size:clamp(2rem,5.3vw,3.65rem);line-height:1.08;font-weight:850;max-width:900px;margin:0 auto 18px}
 .hero h1 span,.gradient-text{background:linear-gradient(135deg,#60a5fa,#818cf8);-webkit-background-clip:text;-webkit-text-fill-color:transparent}
 .hero p{max-width:720px;margin:0 auto;color:var(--muted);font-size:1.04rem}
 .hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:26px}
+.hero-features{display:flex;justify-content:center;gap:28px;flex-wrap:wrap;margin-bottom:45px;font-weight:600;font-size:15px;color:#334155;}
 .btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;border-radius:13px;padding:12px 18px;font-weight:800;border:1px solid var(--border);cursor:pointer;font-family:var(--fb);font-size:.94rem}
 .btn-primary{background:linear-gradient(135deg,var(--accent),var(--accent-2));color:#fff;border-color:transparent}
 .btn-secondary{background:var(--surface);color:var(--text)}
 .btn:hover{text-decoration:none;transform:translateY(-1px)}
 .container,section{max-width:1180px;margin:0 auto;padding:64px 22px}
-.section-compact{padding-top:38px}
+.section-compact{padding:80px 0;}
 .section-divider{border:0;border-top:1px solid var(--border);max-width:1136px;margin:0 auto}
 .section-head{text-align:center;margin-bottom:42px}
 .section-head h2{font-family:var(--fh);font-size:clamp(1.55rem,3vw,2.35rem);line-height:1.17;margin-bottom:10px}
