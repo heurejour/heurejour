@@ -297,7 +297,7 @@ img,svg{max-width:100%;height:auto;display:block}
   background:var(--grad-brand);box-shadow:0 0 18px rgba(139,125,255,.6);
 }
 
-.calc-panel{display:none;padding:34px}
+.calc-panel{display:none;padding:44px 34px 34px}
 .calc-panel.active{display:block;animation:fadeUp .3s ease}
 .panel-title{font-family:var(--fh);font-size:1.15rem;font-weight:700;margin-bottom:22px;letter-spacing:-.005em;color:var(--light)}
 
