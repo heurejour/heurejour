@@ -228,7 +228,9 @@ img,svg{max-width:100%;height:auto;display:block}
   content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;
   background:linear-gradient(135deg,rgba(106,163,255,.0),rgba(139,125,255,.0));
   -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
-  -webkit-mask-composite:xor;mask-composite:exclude;
+  -webkit-mask-composite:xor;
+  mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  mask-composite:exclude;
   pointer-events:none;transition:background .25s;
 }
 .card:hover{transform:translateY(-4px);border-color:var(--border-strong);box-shadow:var(--shadow)}
@@ -269,7 +271,9 @@ img,svg{max-width:100%;height:auto;display:block}
   content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;
   background:linear-gradient(135deg,rgba(106,163,255,.5),rgba(139,125,255,.3) 50%,rgba(34,211,238,.4));
   -webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
-  -webkit-mask-composite:xor;mask-composite:exclude;pointer-events:none;opacity:.6;
+  -webkit-mask-composite:xor;
+  mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);
+  mask-composite:exclude;pointer-events:none;opacity:.6;
 }
 .calc-box+.calc-box{margin-top:24px}
 
@@ -673,7 +677,19 @@ img,svg{max-width:100%;height:auto;display:block}
   .convert-grid,.diff-cols,.form-grid{grid-template-columns:1fr}
   .article-content{padding:24px}
 }
-
+/* ---------- Fallback for browsers without color-mix() ---------- */
+@supports not (color:color-mix(in oklab,white 50%,transparent)) {
+  .site-header,.mobile-nav,.desktop-nav a:hover,.theme-btn,.hamburger,.hero-eyebrow,
+  .btn-secondary,.card,.ad-slot,.calc-box,.calc-tabs,.time-row,.time-row:focus-within,
+  .time-inputs input,.field-group input,.field-group select,.field-group textarea,
+  .add-row-btn,.op-btn,.btn-reset,.copy-btn,.author-box,.example-box,.example-list li,
+  .step,.faq-item,.blog-card,.tool-card,.article-content,.sidebar-box,.about-strip,
+  .clean-table th,.article-content th,.site-footer,.toast,.pct-field-wrap,.kpi,.conv-item{
+    background-color:var(--surface);
+    background-image:none;
+  }
+  .site-header{background-color:var(--bg)}
+}
 /* ---------- Reduced motion ---------- */
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation-duration:.01ms!important;transition-duration:.01ms!important;scroll-behavior:auto!important}
