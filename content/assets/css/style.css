@@ -155,13 +155,17 @@ img,svg{max-width:100%;height:auto;display:block}
 }
 .hero.narrow{padding-bottom:48px}
 .hero-eyebrow{
-  display:inline-flex;gap:8px;align-items:center;
-  background:color-mix(in oklab,var(--surface) 70%,transparent);
-  border:1px solid var(--border-strong);
-  color:#c7d3ee;font-size:.74rem;font-weight:700;letter-spacing:.14em;text-transform:uppercase;
-  padding:7px 16px;border-radius:999px;margin-bottom:24px;
-  backdrop-filter:blur(8px);
-  box-shadow:0 1px 0 rgba(255,255,255,.04) inset, 0 10px 30px -15px rgba(139,125,255,.6);
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:13px;font-weight:700;color:var(--primary-600);
+  background:var(--primary-100);
+  border:1px solid var(--primary-200, var(--primary));
+  padding:7px 16px;border-radius:999px;
+  letter-spacing:.01em;
+}
+[data-theme="dark"] .hero-eyebrow{
+  background:rgba(99,102,241,.18);
+  border-color:rgba(99,102,241,.35);
+  color:#C7D2FE;
 }
 [data-theme="dark"] .hero-eyebrow{
   background:rgba(99,102,241,.12);
