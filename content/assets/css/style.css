@@ -635,7 +635,7 @@ img,svg{max-width:100%;height:auto;display:block}
   display:flex;align-items:center;
   background:color-mix(in oklab,var(--bg-2) 80%,transparent);
   border:1px solid var(--border);
-  border-radius:11px;overflow:hidden;
+  border-radius:11px;overflow:visible;
   transition:border-color .2s,box-shadow .2s;
 }
 .pct-field-wrap:focus-within{border-color:var(--accent);box-shadow:0 0 0 4px rgba(106,163,255,.16)}
