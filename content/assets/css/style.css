@@ -264,7 +264,7 @@ img,svg{max-width:100%;height:auto;display:block}
   background:linear-gradient(180deg,color-mix(in oklab,var(--surface) 98%,transparent),color-mix(in oklab,var(--surface-2) 98%,transparent));
   border:1px solid var(--border-strong);
   border-radius:var(--radius-xl);
-  box-shadow:var(--shadow-glow);
+  box-shadow:var(--shadow);
   overflow:visible;
   padding:28px;
 }
