@@ -129,122 +129,126 @@
 
   <!-- TOOL 1 -->
   <div class="calc-box" id="tool-pct-of">
-   <div class="calc-panel active">
-    <div class="tool-icon">🔢</div>
-    <p class="panel-title">Calculer X % d'un nombre</p>
-    <div class="convert-grid">
-      <div class="field-group">
-        <label for="pct1-percent">Pourcentage</label>
-        <div class="pct-field-wrap">
-          <input type="number" id="pct1-percent" placeholder="Ex. 20" min="0">
-          <span class="pct-unit" aria-hidden="true">%</span>
+    <div class="calc-panel active">
+      <div class="tool-icon">🔢</div>
+      <p class="panel-title">Calculer X % d'un nombre</p>
+      <div class="convert-grid">
+        <div class="field-group">
+          <label for="pct1-percent">Pourcentage</label>
+          <div class="pct-field-wrap">
+            <input type="number" id="pct1-percent" placeholder="Ex. 20" min="0">
+            <span class="pct-unit" aria-hidden="true">%</span>
+          </div>
+        </div>
+        <div class="field-group">
+          <label for="pct1-number">Du nombre</label>
+          <input type="number" id="pct1-number" placeholder="Ex. 150">
         </div>
       </div>
-      <div class="field-group">
-        <label for="pct1-number">Du nombre</label>
-        <input type="number" id="pct1-number" placeholder="Ex. 150">
+      <div id="pct1-error" class="error-msg" role="alert"></div>
+      <div class="calc-actions">
+        <button class="btn-calc" onclick="calcPercentOf(event)">Calculer</button>
+        <button class="btn-reset" onclick="resetTool('pct1-percent','pct1-number','pct1-result','pct1-error','pct1-result-main','pct1-result-sub')">Réinitialiser</button>
       </div>
-    </div>
-    <div id="pct1-error" class="error-msg" role="alert"></div>
-    <div class="calc-actions">
-      <button class="btn-calc" onclick="calcPercentOf(event)">Calculer</button>
-      <button class="btn-reset" onclick="resetTool('pct1-percent','pct1-number','pct1-result','pct1-error','pct1-result-main','pct1-result-sub')">Réinitialiser</button>
-    </div>
-    <div class="result-box" id="pct1-result">
-      <button class="copy-btn" onclick="copyResult('pct1-result-main')">Copier</button>
-      <div class="result-label">Résultat du calcul pourcentage</div>
-      <div class="result-main" id="pct1-result-main">–</div>
-      <div class="result-sub" id="pct1-result-sub"></div>
+      <div class="result-box" id="pct1-result">
+        <button class="copy-btn" onclick="copyResult('pct1-result-main')">Copier</button>
+        <div class="result-label">Résultat du calcul pourcentage</div>
+        <div class="result-main" id="pct1-result-main">–</div>
+        <div class="result-sub" id="pct1-result-sub"></div>
+      </div>
     </div>
   </div>
 
   <!-- TOOL 2 -->
   <div class="calc-box" id="tool-pct-what">
-   <div class="calc-panel active">
-    <div class="tool-icon">📊</div>
-    <p class="panel-title">Quel pourcentage représente une valeur ?</p>
-    <div class="convert-grid">
-      <div class="field-group">
-        <label for="pct2-value">Valeur</label>
-        <input type="number" id="pct2-value" placeholder="Ex. 30">
+    <div class="calc-panel active">
+      <div class="tool-icon">📊</div>
+      <p class="panel-title">Quel pourcentage représente une valeur ?</p>
+      <div class="convert-grid">
+        <div class="field-group">
+          <label for="pct2-value">Valeur</label>
+          <input type="number" id="pct2-value" placeholder="Ex. 30">
+        </div>
+        <div class="field-group">
+          <label for="pct2-total">Sur un total de</label>
+          <input type="number" id="pct2-total" placeholder="Ex. 150">
+        </div>
       </div>
-      <div class="field-group">
-        <label for="pct2-total">Sur un total de</label>
-        <input type="number" id="pct2-total" placeholder="Ex. 150">
+      <div id="pct2-error" class="error-msg" role="alert"></div>
+      <div class="calc-actions">
+        <button class="btn-calc" onclick="calcPercentWhat(event)">Calculer</button>
+        <button class="btn-reset" onclick="resetTool('pct2-value','pct2-total','pct2-result','pct2-error','pct2-result-main','pct2-result-sub')">Réinitialiser</button>
       </div>
-    </div>
-    <div id="pct2-error" class="error-msg" role="alert"></div>
-    <div class="calc-actions">
-      <button class="btn-calc" onclick="calcPercentWhat(event)">Calculer</button>
-      <button class="btn-reset" onclick="resetTool('pct2-value','pct2-total','pct2-result','pct2-error','pct2-result-main','pct2-result-sub')">Réinitialiser</button>
-    </div>
-    <div class="result-box" id="pct2-result">
-      <button class="copy-btn" onclick="copyResult('pct2-result-main')">Copier</button>
-      <div class="result-label">Résultat</div>
-      <div class="result-main" id="pct2-result-main">–</div>
-      <div class="result-sub" id="pct2-result-sub"></div>
+      <div class="result-box" id="pct2-result">
+        <button class="copy-btn" onclick="copyResult('pct2-result-main')">Copier</button>
+        <div class="result-label">Résultat</div>
+        <div class="result-main" id="pct2-result-main">–</div>
+        <div class="result-sub" id="pct2-result-sub"></div>
+      </div>
     </div>
   </div>
 
   <!-- TOOL 3 -->
   <div class="calc-box" id="tool-pct-increase">
-   <div class="calc-panel active">
-    <div class="tool-icon">📈</div>
-    <p class="panel-title">Calculer une augmentation en %</p>
-    <div class="convert-grid">
-      <div class="field-group">
-        <label for="pct3-number">Valeur de départ</label>
-        <input type="number" id="pct3-number" placeholder="Ex. 100">
-      </div>
-      <div class="field-group">
-        <label for="pct3-percent">Augmentation de</label>
-        <div class="pct-field-wrap">
-          <input type="number" id="pct3-percent" placeholder="Ex. 15" min="0">
-          <span class="pct-unit" aria-hidden="true">%</span>
+    <div class="calc-panel active">
+      <div class="tool-icon">📈</div>
+      <p class="panel-title">Calculer une augmentation en %</p>
+      <div class="convert-grid">
+        <div class="field-group">
+          <label for="pct3-number">Valeur de départ</label>
+          <input type="number" id="pct3-number" placeholder="Ex. 100">
+        </div>
+        <div class="field-group">
+          <label for="pct3-percent">Augmentation de</label>
+          <div class="pct-field-wrap">
+            <input type="number" id="pct3-percent" placeholder="Ex. 15" min="0">
+            <span class="pct-unit" aria-hidden="true">%</span>
+          </div>
         </div>
       </div>
-    </div>
-    <div id="pct3-error" class="error-msg" role="alert"></div>
-    <div class="calc-actions">
-      <button class="btn-calc" onclick="calcPercentIncrease(event)">Calculer</button>
-      <button class="btn-reset" onclick="resetTool('pct3-number','pct3-percent','pct3-result','pct3-error','pct3-result-main','pct3-result-sub')">Réinitialiser</button>
-    </div>
-    <div class="result-box" id="pct3-result">
-      <button class="copy-btn" onclick="copyResult('pct3-result-main')">Copier</button>
-      <div class="result-label">Nouvelle valeur</div>
-      <div class="result-main" id="pct3-result-main">–</div>
-      <div class="result-sub" id="pct3-result-sub"></div>
+      <div id="pct3-error" class="error-msg" role="alert"></div>
+      <div class="calc-actions">
+        <button class="btn-calc" onclick="calcPercentIncrease(event)">Calculer</button>
+        <button class="btn-reset" onclick="resetTool('pct3-number','pct3-percent','pct3-result','pct3-error','pct3-result-main','pct3-result-sub')">Réinitialiser</button>
+      </div>
+      <div class="result-box" id="pct3-result">
+        <button class="copy-btn" onclick="copyResult('pct3-result-main')">Copier</button>
+        <div class="result-label">Nouvelle valeur</div>
+        <div class="result-main" id="pct3-result-main">–</div>
+        <div class="result-sub" id="pct3-result-sub"></div>
+      </div>
     </div>
   </div>
 
   <!-- TOOL 4 -->
   <div class="calc-box" id="tool-pct-decrease">
-   <div class="calc-panel active">
-    <div class="tool-icon">📉</div>
-    <p class="panel-title">Calculer une réduction en %</p>
-    <div class="convert-grid">
-      <div class="field-group">
-        <label for="pct4-number">Valeur de départ</label>
-        <input type="number" id="pct4-number" placeholder="Ex. 100">
-      </div>
-      <div class="field-group">
-        <label for="pct4-percent">Réduction de</label>
-        <div class="pct-field-wrap">
-          <input type="number" id="pct4-percent" placeholder="Ex. 20" min="0" max="100">
-          <span class="pct-unit" aria-hidden="true">%</span>
+    <div class="calc-panel active">
+      <div class="tool-icon">📉</div>
+      <p class="panel-title">Calculer une réduction en %</p>
+      <div class="convert-grid">
+        <div class="field-group">
+          <label for="pct4-number">Valeur de départ</label>
+          <input type="number" id="pct4-number" placeholder="Ex. 100">
+        </div>
+        <div class="field-group">
+          <label for="pct4-percent">Réduction de</label>
+          <div class="pct-field-wrap">
+            <input type="number" id="pct4-percent" placeholder="Ex. 20" min="0" max="100">
+            <span class="pct-unit" aria-hidden="true">%</span>
+          </div>
         </div>
       </div>
-    </div>
-    <div id="pct4-error" class="error-msg" role="alert"></div>
-    <div class="calc-actions">
-      <button class="btn-calc" onclick="calcPercentDecrease(event)">Calculer</button>
-      <button class="btn-reset" onclick="resetTool('pct4-number','pct4-percent','pct4-result','pct4-error','pct4-result-main','pct4-result-sub')">Réinitialiser</button>
-    </div>
-    <div class="result-box" id="pct4-result">
-      <button class="copy-btn" onclick="copyResult('pct4-result-main')">Copier</button>
-      <div class="result-label">Nouvelle valeur</div>
-      <div class="result-main" id="pct4-result-main">–</div>
-      <div class="result-sub" id="pct4-result-sub"></div>
+      <div id="pct4-error" class="error-msg" role="alert"></div>
+      <div class="calc-actions">
+        <button class="btn-calc" onclick="calcPercentDecrease(event)">Calculer</button>
+        <button class="btn-reset" onclick="resetTool('pct4-number','pct4-percent','pct4-result','pct4-error','pct4-result-main','pct4-result-sub')">Réinitialiser</button>
+      </div>
+      <div class="result-box" id="pct4-result">
+        <button class="copy-btn" onclick="copyResult('pct4-result-main')">Copier</button>
+        <div class="result-label">Nouvelle valeur</div>
+        <div class="result-main" id="pct4-result-main">–</div>
+        <div class="result-sub" id="pct4-result-sub"></div>
+      </div>
     </div>
   </div>
 
