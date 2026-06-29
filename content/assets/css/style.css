@@ -266,6 +266,7 @@ img,svg{max-width:100%;height:auto;display:block}
   border-radius:var(--radius-xl);
   box-shadow:var(--shadow-glow);
   overflow:visible;
+  padding:28px;
 }
 .calc-box::before{
   content:"";position:absolute;inset:0;border-radius:inherit;padding:1px;
