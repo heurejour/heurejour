@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calcul de la pause repas et temps de travail effectif | CalcHeure</title>
+  <meta name="description" content="Comment calculer votre pause repas, la différencier du temps de travail effectif et retirer correctement la pause obligatoire de vos horaires.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="canonical" href="https://heurejour.com/blog/calcul-pause-repas/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Calcul de la pause repas et temps de travail effectif | CalcHeure">
+  <meta property="og:description" content="Comment calculer votre pause repas, la différencier du temps de travail effectif et retirer correctement la pause obligatoire de vos horaires.">
+  <meta property="og:url" content="https://heurejour.com/blog/calcul-pause-repas/">
+  <meta property="og:site_name" content="CalcHeure">
+  <meta property="og:image" content="https://www.heurejour.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Calcul de la pause repas et temps de travail effectif | CalcHeure">
+  <meta name="twitter:description" content="Comment calculer votre pause repas, la différencier du temps de travail effectif et retirer correctement la pause obligatoire de vos horaires.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "BlogPosting",
+  "headline": "Calcul de la pause repas et temps de travail effectif",
+  "description": "Comment calculer votre pause repas, la différencier du temps de travail effectif et retirer correctement la pause obligatoire de vos horaires.",
+  "author": {
+    "@type": "Organization",
+    "name": "Rédaction CalcHeure"
+  },
+  "publisher": {
+    "@type": "Organization",
+    "name": "CalcHeure",
+    "logo": {
+      "@type": "ImageObject",
+      "url": "https://heurejour.com/favicon.svg"
+    }
+  },
+  "datePublished": "2026-06-30",
+  "dateModified": "2026-06-30",
+  "mainEntityOfPage": "https://heurejour.com/blog/calcul-pause-repas/"
+}
+  </script>
+  <script type="application/ld+json">
+  {
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {
+      "@type": "Question",
+      "name": "La pause repas est-elle obligatoire ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Oui, dès que le temps de travail quotidien atteint 6 heures, une pause d'au moins 20 minutes consécutives est obligatoire."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "La pause repas est-elle rémunérée ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "En général non, sauf si le salarié reste à la disposition de l'employeur pendant la pause ou si un accord d'entreprise prévoit le contraire."
+      }
+    },
+    {
+      "@type": "Question",
+      "name": "Comment retirer la pause du temps de travail ?",
+      "acceptedAnswer": {
+        "@type": "Answer",
+        "text": "Il suffit de calculer l'écart entre l'heure d'arrivée et l'heure de départ, puis de soustraire la durée de la pause pour obtenir le temps de travail effectif."
+      }
+    }
+  ]
+}
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Aller au contenu principal</a>
+<header class="site-header">
+  <div class="nav-inner">
+    <div class="logo"><a href="/">⏱ CalcHeure</a></div>
+    <nav class="desktop-nav" aria-label="Navigation principale">
+      <a href="/#calculator" class="">Calculatrice</a>
+<a href="/#outils" class="">Outils</a>
+<a href="/blog/" class="active">Articles</a>
+<a href="/a-propos/" class="">À propos</a>
+<a href="/#faq" class="">FAQ</a>
+      <a href="/#calculator" class="nav-cta">Calculer →</a>
+    </nav>
+    <button class="theme-btn" onclick="toggleTheme()" aria-label="Changer de thème" id="theme-btn">☀️</button>
+    <button class="hamburger" onclick="toggleMobileNav()" aria-label="Menu" aria-expanded="false" id="hamburger">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile">
+    <a href="/#calculator" onclick="closeMobileNav()" class="">Calculatrice</a>
+<a href="/#outils" onclick="closeMobileNav()" class="">Outils</a>
+<a href="/blog/" onclick="closeMobileNav()" class="active">Articles</a>
+<a href="/a-propos/" onclick="closeMobileNav()" class="">À propos</a>
+<a href="/#faq" onclick="closeMobileNav()" class="">FAQ</a>
+  </nav>
+</header>
+<main id="main-content">
+
+<div class="hero narrow">
+  <span class="hero-eyebrow">Guide pratique</span>
+  <h1><span>Calcul de la pause repas et temps de travail effectif</span></h1>
+  <p>Pause obligatoire, pause déjeuner et calcul du temps de travail réellement effectué après déduction des pauses.</p>
+</div>
+<section class="section-compact">
+  <div class="article-layout">
+    <article class="article-content">
+      <p class="lead">La pause repas est souvent source de confusion lors du calcul des horaires de travail. Voici comment la distinguer du temps de travail effectif, calculer la pause obligatoire et l'enlever correctement de votre journée.</p>
+      <p><em>Dernière mise à jour : 30 juin 2026</em></p>
+
+<h2>Qu'est-ce que le temps de travail effectif ?</h2>
+<p>Le temps de travail effectif correspond au temps pendant lequel le salarié est à la disposition de l'employeur et doit se conformer à ses directives, sans pouvoir vaquer librement à des occupations personnelles. La pause repas, lorsqu'elle est réellement libre, n'entre pas dans ce décompte.</p>
+
+<h2>La pause obligatoire</h2>
+<p>Dès que le temps de travail quotidien atteint 6 heures, le Code du travail impose une pause d'au moins 20 minutes consécutives. Cette pause peut être prise en une seule fois ou fractionnée selon les accords applicables dans l'entreprise. Certaines conventions collectives prévoient des durées plus longues.</p>
+
+<h2>Pause déjeuner : rémunérée ou non ?</h2>
+<p>En règle générale, la pause déjeuner n'est pas rémunérée, sauf dans deux cas : si le salarié reste à la disposition de l'employeur pendant cette période, ou si un accord d'entreprise prévoit explicitement son maintien en temps de travail effectif. Il est donc essentiel de vérifier son contrat ou sa convention collective.</p>
+
+<h2>Comment calculer le temps de travail réel</h2>
+<ol>
+  <li>Calculez l'écart entre l'heure d'arrivée et l'heure de départ.</li>
+  <li>Identifiez la durée totale des pauses prises dans la journée.</li>
+  <li>Soustrayez la durée des pauses de l'écart total pour obtenir le temps de travail effectif.</li>
+</ol>
+
+<h2>Exemple concret</h2>
+<table>
+  <thead><tr><th>Étape</th><th>Calcul</th><th>Résultat</th></tr></thead>
+  <tbody>
+    <tr><td>Horaires</td><td>09:00 à 18:00</td><td>9h00 d'amplitude</td></tr>
+    <tr><td>Pause déjeuner</td><td>1h00</td><td>1h00 à déduire</td></tr>
+    <tr><td>Temps de travail effectif</td><td>9h00 − 1h00</td><td>8h00</td></tr>
+  </tbody>
+</table>
+
+<h2>Erreur fréquente à éviter</h2>
+<p>Beaucoup de salariés oublient de déduire la pause repas et calculent leur durée de travail uniquement sur l'amplitude horaire. Cela fausse le décompte des heures, notamment pour le calcul des heures supplémentaires. Pensez toujours à retirer le temps de pause réel, et non un forfait approximatif.</p>
+
+<h2>Visualiser une journée type avec pause</h2>
+<p>Pour bien comprendre la déduction pause, voici le déroulé d'une journée de travail classique avec une pause déjeuner :</p>
+<table>
+  <thead><tr><th>Heure</th><th>Statut</th></tr></thead>
+  <tbody>
+    <tr><td>09:00</td><td>Début du travail effectif</td></tr>
+    <tr><td>12:00</td><td>Début de la pause repas</td></tr>
+    <tr><td>13:00</td><td>Fin de la pause repas / reprise du travail</td></tr>
+    <tr><td>18:00</td><td>Fin du travail effectif</td></tr>
+  </tbody>
+</table>
+<p>Sur cette journée, l'amplitude totale est de 9h00 (de 09:00 à 18:00), mais le temps de pause de 1h00 n'est pas du temps de travail effectif : il faut donc le retirer pour obtenir 8h00 de travail réel.</p>
+
+<h2>Calcul pause obligatoire selon la durée travaillée</h2>
+<table>
+  <thead><tr><th>Temps de travail quotidien</th><th>Pause minimale obligatoire</th></tr></thead>
+  <tbody>
+    <tr><td>Moins de 6h</td><td>Aucune pause obligatoire légale</td></tr>
+    <tr><td>6h et plus</td><td>20 minutes consécutives minimum</td></tr>
+    <tr><td>Selon convention collective</td><td>Souvent 30 à 60 minutes pour la pause déjeuner</td></tr>
+  </tbody>
+</table>
+<p>Cette pause de 20 minutes est un minimum légal : de nombreuses conventions collectives ou accords d'entreprise prévoient une pause déjeuner plus longue, en particulier lorsque le salarié quitte son poste de travail pour se restaurer.</p>
+
+<h2>Références légales</h2>
+<p>Le calcul pause repas s'appuie sur l'article du Code du travail relatif au temps de pause, qui impose une pause de 20 minutes consécutives dès que le temps de travail quotidien atteint 6 heures. Le temps de travail effectif désigne la période pendant laquelle le salarié est à la disposition de l'employeur et ne peut vaquer librement à des occupations personnelles ; à l'inverse, une pause repas réellement libre n'entre pas dans ce décompte. Il est recommandé de consulter sa convention collective, car celle-ci peut imposer une pause déjeuner plus longue ou prévoir sa rémunération dans certains secteurs d'activité.</p>
+
+<h2>Les erreurs les plus fréquentes</h2>
+<ul>
+  <li><strong>Oublier de déduire la pause déjeuner</strong> et calculer le temps de travail uniquement sur l'amplitude horaire.</li>
+  <li><strong>Confondre amplitude et temps de travail effectif</strong>, ce qui fausse aussi le calcul des heures supplémentaires.</li>
+  <li><strong>Appliquer un forfait de pause approximatif</strong> au lieu de noter l'heure réelle de début et de fin de pause.</li>
+  <li><strong>Ignorer la pause obligatoire de 20 minutes</strong> pour les journées de 6 heures ou plus.</li>
+  <li><strong>Ne pas vérifier si la pause est rémunérée</strong> selon le contrat ou la convention collective applicable.</li>
+</ul>
+
+<h2>Calculateur gratuit</h2>
+<p>Gagnez du temps en utilisant notre calculateur pause repas gratuit. Saisissez simplement vos horaires d'arrivée et de départ, ajoutez la durée de votre pause, et obtenez immédiatement votre temps de travail effectif, sans risque d'erreur de déduction pause. Essayez directement notre <a href="/calcul-heures-travail/">calculateur d'heures de travail</a>.</p>
+
+<h2>Vous pourriez aussi avoir besoin de</h2>
+<ul>
+  <li><a href="/calcul-heures-travail/">Calcul heures de travail</a></li>
+  <li><a href="/blog/calcul-heures-supplementaires/">Calcul des heures supplémentaires</a></li>
+  <li><a href="/blog/calcul-heures-nuit/">Calcul heures de nuit</a></li>
+  <li><a href="/salaire-horaire/">Salaire horaire</a></li>
+  <li><a href="/convertisseur-minutes-heures/">Convertisseur minutes heures</a></li>
+  <li><a href="/feuille-de-presence/">Feuille de présence</a></li>
+</ul>
+
+<h2>FAQ</h2>
+<p><strong>La pause repas est-elle obligatoire ?</strong><br>Oui, dès que le temps de travail quotidien atteint 6 heures, une pause d'au moins 20 minutes consécutives est obligatoire.</p>
+<p><strong>La pause repas est-elle rémunérée ?</strong><br>En général non, sauf si le salarié reste à la disposition de l'employeur ou si un accord prévoit le contraire.</p>
+<p><strong>Comment retirer la pause du temps de travail ?</strong><br>Calculez l'écart entre l'heure d'arrivée et l'heure de départ, puis soustrayez la durée de la pause.</p>
+<p><strong>Existe-t-il un calculateur de pause repas en ligne ?</strong><br>Oui, notre calculateur pause repas gratuit permet d'obtenir instantanément le temps de travail effectif après déduction de la pause.</p>
+
+      <div class="author-box">
+  <div class="author-avatar">⏱</div>
+  <div>
+    <div class="author-name">Rédaction CalcHeure</div>
+    <div class="author-role">Contenu pratique sur le calcul des durées, les conversions et l'organisation du temps.</div>
+  </div>
+</div>
+    </article>
+    <aside class="sidebar" aria-label="Articles et outils liés">
+      <div class="sidebar-box">
+        <h3>Outils utiles</h3>
+        <ul>
+          <li><a href="/calcul-heures-travail/">Calcul heures de travail</a></li>
+          <li><a href="/convertisseur-minutes-heures/">Convertisseur minutes heures</a></li>
+          <li><a href="/salaire-horaire/">Salaire horaire</a></li>
+        </ul>
+      </div>
+      <div class="sidebar-box">
+        <h3>Autres articles</h3>
+        <ul>
+          <li><a href="/blog/calcul-heures-travail/">Calcul des heures de travail</a></li>
+          <li><a href="/blog/calcul-heures-supplementaires/">Calcul des heures supplémentaires</a></li>
+          <li><a href="/blog/gestion-du-temps-freelance/">Gestion du temps freelance</a></li>
+        </ul>
+      </div>
+      <div class="ad-slot" style="display:none"><div>Emplacement annonce<br><small>Bloc réservé pour AdSense.</small></div></div>
+    </aside>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo"><a href="/">⏱ CalcHeure</a></div>
+      <p>Calculatrice heure en ligne gratuite pour additionner, soustraire, convertir et mieux comprendre les durées.</p>
+    </div>
+   <div class="footer-col">
+      <h4>Outils</h4>
+      <ul>
+        <li><a href="/">Calcul heure</a></li>
+        <li><a href="/calcul-heures-travail/">Calcul heures de travail</a></li>
+        <li><a href="/convertisseur-minutes-heures/">Convertisseur minutes heures</a></li>
+        <li><a href="/salaire-horaire/">Salaire horaire</a></li>
+        <li><a href="/calculer-un-pourcentage/">Calculer un pourcentage</a></li>
+        <li><a href="/calcul-frais-kilometrique/">Calcul frais kilométrique</a></li>
+        <li><a href="/difference-entre-deux-dates/">Différence entre deux dates</a></li>
+        <li><a href="/feuille-de-presence/">Feuille de présence</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4>Articles</h4>
+       <ul><li><a href="/blog/calcul-heures-travail/">Calcul des heures de travail</a></li>
+<li><a href="/blog/convertir-minutes-heures/">Convertir minutes en heures</a></li>
+<li><a href="/blog/gestion-du-temps-freelance/">Gestion du temps freelance</a></li>
+<li><a href="/blog/taux-horaire-net-brut/">Taux horaire net à partir du brut</a></li>
+<li><a href="/blog/calcul-heures-nuit/">Calcul heures de nuit</a></li>
+<li><a href="/blog/calcul-heures-supplementaires/">Calcul des heures supplémentaires</a></li>
+<li><a href="/blog/calcul-pause-repas/">Calcul pause repas</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>Confiance</h4>
+      <ul>
+        <li><a href="/a-propos/">À propos</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/politique-confidentialite/">Confidentialité</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4> </h4>
+      <ul>
+        <li><a href="/#annonces"> </a></li>
+        <li><a href="/#faq"> </a></li>
+        <li><a href="/blog/"> </a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 CalcHeure. Calculatrice heure gratuite en ligne. Tous droits réservés.</p>
+   <div class="footer-links">
+      <a href="/politique-confidentialite/">Confidentialité</a>
+      <a href="/sitemap.xml">Plan du site</a>
+    </div>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/assets/js/app.js" defer></script>
+</body>
+</html>
