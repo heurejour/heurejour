@@ -255,9 +255,7 @@ img,svg{max-width:100%;height:auto;display:block}
   max-width:980px;margin:0 auto 20px;
   color:var(--light);
 }
-.hero h1 span,.gradient-text{
-  background:var(--grad-brand);
-  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+ font-family:var
 }
 .hero p{max-width:740px;margin:0 auto;color:var(--muted);font-size:1.08rem}
 .hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:32px}
