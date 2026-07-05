@@ -254,8 +254,7 @@ img,svg{max-width:100%;height:auto;display:block}
   letter-spacing:-.025em;
   max-width:980px;margin:0 auto 20px;
   color:var(--light);
-}
- font-family:var
+  text-align:center;
 }
 .hero p{max-width:740px;margin:0 auto;color:var(--muted);font-size:1.08rem}
 .hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:32px}
