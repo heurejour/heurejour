@@ -406,9 +406,9 @@ img,svg{max-width:100%;height:auto;display:block}
 .result-main{
   font-family:var(--fh);
   font-size:clamp(2.2rem,6vw,3.6rem);
-  font-weight:800;color:var(--light);
+  font-weight:800;color:var(--text);
   line-height:1.05;letter-spacing:-.02em;
-  background:linear-gradient(135deg,#fff,#c7d3ee);
+  background:linear-gradient(135deg,#1b1f3b,#3a4a8c);
   -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
 }
 .result-sub{margin-top:12px;color:var(--muted);font-size:.95rem;position:relative}
