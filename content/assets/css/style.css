@@ -413,6 +413,7 @@ img,svg{max-width:100%;height:auto;display:block}
 }
 .result-sub{margin-top:12px;color:var(--muted);font-size:.95rem;position:relative}
 .result-sub span{color:#a7c4ff;font-weight:800}
+.result-main-timer{font-size:clamp(3rem,10vw,5.5rem)}
 .copy-btn{
   position:absolute;top:14px;right:14px;
   background:color-mix(in oklab,var(--card) 80%,transparent);
