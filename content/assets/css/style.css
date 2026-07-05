@@ -256,6 +256,13 @@ img,svg{max-width:100%;height:auto;display:block}
   color:var(--light);
   text-align:center;
 }
+.hero h1 span{
+  background:var(--grad-brand);
+  -webkit-background-clip:text;
+  background-clip:text;
+  -webkit-text-fill-color:transparent;
+  display:inline-block;
+}
 .hero p{max-width:740px;margin:0 auto;color:var(--muted);font-size:1.08rem}
 .hero-actions{display:flex;gap:12px;justify-content:center;flex-wrap:wrap;margin-top:32px}
 
