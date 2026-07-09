@@ -1,0 +1,382 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Salaire Horaire | Calculer un Taux Horaire Gratuit</title>
+  <meta name="description" content="Calculez votre salaire horaire à partir d'un salaire mensuel : taux horaire brut ou net, gratuit et sans inscription. Calculatrice de taux horaire en ligne.">
+  <meta name="robots" content="index,follow">
+  <meta name="theme-color" content="#0d1117">
+  <link rel="canonical" href="https://heurejour.com/salaire-horaire/">
+  <meta property="og:type" content="website">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Salaire Horaire | Calculer un Taux Horaire Gratuit">
+  <meta property="og:description" content="Calculez votre salaire horaire à partir d'un salaire mensuel : taux horaire brut ou net, gratuit et sans inscription.">
+  <meta property="og:url" content="https://heurejour.com/salaire-horaire/">
+  <meta property="og:site_name" content="CalcHeure">
+  <meta property="og:image" content="https://www.heurejour.com/og-image.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Salaire Horaire | Calculer un Taux Horaire Gratuit">
+  <meta name="twitter:description" content="Calculez votre salaire horaire à partir d'un salaire mensuel : taux horaire brut ou net, gratuit et sans inscription.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+  <link rel="shortcut icon" href="/favicon.ico">
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap">
+  <link rel="stylesheet" href="/assets/css/style.css">
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebApplication",
+    "name": "Salaire horaire",
+    "alternateName": ["Calcul salaire horaire", "Calculer taux horaire", "Calculatrice taux horaire", "Taux horaire net"],
+    "url": "https://heurejour.com/salaire-horaire/",
+    "applicationCategory": "UtilitiesApplication",
+    "operatingSystem": "Any"
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://heurejour.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Salaire horaire", "item": "https://heurejour.com/salaire-horaire/" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      { "@type": "Question", "name": "Comment calculer un salaire horaire ?", "acceptedAnswer": { "@type": "Answer", "text": "Divisez votre salaire mensuel par le nombre d'heures travaillées dans le mois. Les heures mensuelles s'obtiennent en multipliant les heures hebdomadaires par 52 puis en divisant par 12." } },
+      { "@type": "Question", "name": "Comment calculer un taux horaire ?", "acceptedAnswer": { "@type": "Answer", "text": "Le taux horaire correspond au salaire divisé par le nombre d'heures travaillées sur la même période, qu'il s'agisse d'un salaire mensuel, annuel ou d'une mission ponctuelle." } },
+      { "@type": "Question", "name": "Comment convertir un salaire mensuel en salaire horaire ?", "acceptedAnswer": { "@type": "Answer", "text": "Multipliez vos heures hebdomadaires par 52 semaines puis divisez par 12 pour obtenir vos heures mensuelles, puis divisez votre salaire mensuel par ce nombre d'heures." } },
+      { "@type": "Question", "name": "Comment calculer un salaire horaire net à partir du brut ?", "acceptedAnswer": { "@type": "Answer", "text": "Appliquez un taux de cotisations sociales moyen (environ 22 à 25 % pour un salarié non-cadre) à votre taux horaire brut pour estimer le taux horaire net." } },
+      { "@type": "Question", "name": "Combien d'heures y a-t-il dans un mois ?", "acceptedAnswer": { "@type": "Answer", "text": "Pour un temps plein de 35 heures par semaine, un mois compte en moyenne 151,67 heures, calculées avec la formule 35 × 52 ÷ 12." } },
+      { "@type": "Question", "name": "Comment calculer un salaire horaire pour un temps partiel ?", "acceptedAnswer": { "@type": "Answer", "text": "Indiquez simplement vos heures hebdomadaires réelles, par exemple 20 heures, à la place des 35 heures d'un temps plein, pour obtenir votre taux horaire proportionnel." } },
+      { "@type": "Question", "name": "Qu'est-ce que le taux horaire brut ?", "acceptedAnswer": { "@type": "Answer", "text": "Le taux horaire brut est le montant perçu par heure travaillée avant déduction des cotisations sociales et de l'impôt sur le revenu." } },
+      { "@type": "Question", "name": "Qu'est-ce que le taux horaire net ?", "acceptedAnswer": { "@type": "Answer", "text": "Le taux horaire net est le montant réellement perçu par heure travaillée, après déduction des cotisations sociales obligatoires." } },
+      { "@type": "Question", "name": "Comment calculer un salaire annuel en salaire horaire ?", "acceptedAnswer": { "@type": "Answer", "text": "Divisez le salaire annuel par 12 pour obtenir le salaire mensuel, puis appliquez la même formule de conversion en taux horaire à partir des heures hebdomadaires." } },
+      { "@type": "Question", "name": "Le résultat du calcul de salaire horaire est-il exact ?", "acceptedAnswer": { "@type": "Answer", "text": "Non, il s'agit d'une estimation. Un bulletin de salaire officiel dépend du contrat, des primes, des cotisations et des règles spécifiques à chaque situation." } }
+    ]
+  }
+  </script>
+</head>
+<body>
+<a class="skip-link" href="#main-content">Aller au contenu principal</a>
+<header class="site-header">
+  <div class="nav-inner">
+    <div class="logo"><a href="/">⏱ CalcHeure</a></div>
+    <nav class="desktop-nav" aria-label="Navigation principale">
+      <a href="/#calculator" class="">Calculatrice</a>
+      <a href="/#outils" class="active">Outils</a>
+      <a href="/blog/" class="">Articles</a>
+      <a href="/a-propos/" class="">À propos</a>
+      <a href="/#faq" class="">FAQ</a>
+      <a href="/#calculator" class="nav-cta">Calculer →</a>
+    </nav>
+    <button class="theme-btn" onclick="toggleTheme()" aria-label="Changer de thème" id="theme-btn">☀️</button>
+    <button class="hamburger" onclick="toggleMobileNav()" aria-label="Menu" aria-expanded="false" id="hamburger">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true">
+        <line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="18" x2="21" y2="18"></line>
+      </svg>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobile-nav" aria-label="Menu mobile">
+    <a href="/#calculator" onclick="closeMobileNav()" class="">Calculatrice</a>
+    <a href="/#outils" onclick="closeMobileNav()" class="active">Outils</a>
+    <a href="/blog/" onclick="closeMobileNav()" class="">Articles</a>
+    <a href="/a-propos/" onclick="closeMobileNav()" class="">À propos</a>
+    <a href="/#faq" onclick="closeMobileNav()" class="">FAQ</a>
+  </nav>
+</header>
+<main id="main-content">
+
+<div class="hero narrow">
+  <span class="hero-eyebrow">✓ Gratuit &nbsp;·&nbsp; ✓ Sans inscription &nbsp;·&nbsp; ✓ Compatible mobile</span>
+  <h1><span>Salaire horaire</span> à partir du salaire mensuel</h1>
+  <p>Calculez votre salaire horaire et votre taux horaire estimé à partir de votre salaire mensuel et de votre durée de travail hebdomadaire, en brut ou en net.</p>
+  <div class="hero-actions">
+    <a class="btn btn-primary" href="#calculator">Calculer mon taux horaire →</a>
+    <a class="btn btn-secondary" href="#formule">Voir la formule →</a>
+  </div>
+</div>
+
+<section id="calculator" aria-labelledby="calc-section-title" class="section-compact">
+  <h2 id="calc-section-title" class="sr-only">Calculatrice de salaire horaire en ligne</h2>
+  <div class="calc-box">
+    <div class="calc-panel active">
+      <p class="panel-title">Calcul du taux horaire</p>
+      <div class="form-grid">
+        <div class="field-group"><label for="salary-month">Salaire mensuel en €</label><input type="number" id="salary-month" min="0" step="0.01" placeholder="Ex. 2000"></div>
+        <div class="field-group"><label for="salary-hours">Heures par semaine</label><input type="number" id="salary-hours" min="1" step="0.01" value="35"></div>
+      </div>
+      <div class="calc-actions"><button class="btn-calc" data-label="Calculer le taux horaire" onclick="calcHourlySalary(event)">Calculer le taux horaire</button></div>
+      <div class="result-box" id="salary-result">
+        <div class="result-label">Taux horaire estimé</div>
+        <div class="result-main" id="salary-result-main">–</div>
+        <div class="result-sub" id="salary-result-sub"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="examples-title" class="section-compact">
+  <h2 id="examples-title">Exemples de calcul de salaire horaire</h2>
+  <div class="tools-grid">
+    <div class="tool-card"><h3>2 000 € / 35h par semaine</h3><p>Taux horaire estimé : <strong>≈ 13,18 €</strong></p></div>
+    <div class="tool-card"><h3>1 500 € / 20h par semaine (temps partiel)</h3><p>Taux horaire estimé : <strong>≈ 17,31 €</strong></p></div>
+    <div class="tool-card"><h3>3 000 € / 39h par semaine</h3><p>Taux horaire estimé : <strong>≈ 17,75 €</strong></p></div>
+    <div class="tool-card"><h3>Salaire annuel 30 000 € / 35h</h3><p>Salaire mensuel 2 500 € → taux horaire <strong>≈ 16,48 €</strong></p></div>
+  </div>
+</section>
+
+<section aria-labelledby="how-title" class="section-compact">
+  <h2 id="how-title">Comment calculer un taux horaire</h2>
+  <div class="tools-grid">
+    <div class="tool-card"><h3>1. Salaire mensuel</h3><p>Indiquez votre salaire mensuel brut ou net en euros.</p></div>
+    <div class="tool-card"><h3>2. Heures par semaine</h3><p>Indiquez votre durée de travail hebdomadaire.</p></div>
+    <div class="tool-card"><h3>3. Calcul</h3><p>La calculatrice convertit vos heures en heures mensuelles.</p></div>
+    <div class="tool-card"><h3>4. Résultat</h3><p>Votre salaire horaire estimé s'affiche instantanément.</p></div>
+  </div>
+</section>
+
+<section id="formule" aria-labelledby="formula-title" class="section-compact">
+  <h2 id="formula-title">Formule de calcul du salaire horaire</h2>
+  <p><strong>Salaire horaire = Salaire mensuel ÷ (Heures hebdomadaires × 52 ÷ 12)</strong></p>
+  <p>La formule utilisée est : salaire mensuel divisé par les heures mensuelles estimées. Les heures mensuelles se calculent avec heures hebdomadaires × 52 ÷ 12, soit environ 151,67 heures pour un temps plein de 35 heures.</p>
+  <p><em>Ce résultat reste une estimation.</em> Pour un bulletin de salaire officiel, il faut tenir compte du contrat, des primes, des cotisations et des règles applicables.</p>
+</section>
+
+<section aria-labelledby="adv-title" class="section-compact">
+  <h2 id="adv-title">Pourquoi utiliser cette calculatrice de salaire horaire</h2>
+  <div class="tools-grid">
+    <div class="tool-card"><div class="tool-icon">⚡</div><h3>Calcul instantané</h3><p>Résultat immédiat sans rechargement de page.</p></div>
+    <div class="tool-card"><div class="tool-icon">🔒</div><h3>100 % gratuit</h3><p>Aucune inscription, aucune donnée stockée.</p></div>
+    <div class="tool-card"><div class="tool-icon">📱</div><h3>Compatible mobile</h3><p>Utilisable sur smartphone, tablette ou ordinateur.</p></div>
+    <div class="tool-card"><div class="tool-icon">💶</div><h3>Brut ou net</h3><p>Adaptez le calcul selon le montant renseigné.</p></div>
+  </div>
+</section>
+
+<section aria-labelledby="when-title" class="section-compact">
+  <h2 id="when-title">Quand utiliser ce calcul de taux horaire ?</h2>
+  <div class="tools-grid">
+    <div class="tool-card"><h3>Négociation salariale</h3><p>Comparez une offre d'emploi à votre taux horaire actuel.</p></div>
+    <div class="tool-card"><h3>Changement de temps de travail</h3><p>Estimez l'impact d'un passage à temps partiel.</p></div>
+    <div class="tool-card"><h3>Devis freelance</h3><p>Fixez un tarif horaire cohérent avec un revenu mensuel cible.</p></div>
+    <div class="tool-card"><h3>Comparaison d'offres</h3><p>Comparez plusieurs propositions sur une base horaire commune.</p></div>
+  </div>
+</section>
+
+<section aria-labelledby="usecases-title" class="section-compact">
+  <h2 id="usecases-title">Pour qui est faite cette calculatrice de taux horaire</h2>
+  <div class="tools-grid">
+    <div class="tool-card"><h3>Salariés</h3><p>Vérifiez votre taux horaire réel.</p></div>
+    <div class="tool-card"><h3>Freelances</h3><p>Fixez un tarif horaire à partir d'un revenu cible.</p></div>
+    <div class="tool-card"><h3>Recruteurs</h3><p>Comparez des candidats sur une base horaire commune.</p></div>
+    <div class="tool-card"><h3>Étudiants et alternants</h3><p>Comprenez la conversion entre salaire mensuel et horaire.</p></div>
+  </div>
+</section>
+
+<section id="faq" aria-labelledby="faq-title" class="section-compact">
+  <h2 id="faq-title">Questions fréquentes</h2>
+  <div class="faq-list">
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Comment calculer un salaire horaire ?</button>
+      <div class="faq-a"><p>Divisez votre salaire mensuel par le nombre d'heures travaillées dans le mois, obtenu via heures hebdomadaires × 52 ÷ 12.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Comment calculer un taux horaire ?</button>
+      <div class="faq-a"><p>Le taux horaire correspond au salaire divisé par le nombre d'heures travaillées sur la même période.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Comment convertir un salaire mensuel en salaire horaire ?</button>
+      <div class="faq-a"><p>Multipliez les heures hebdomadaires par 52 puis divisez par 12 pour obtenir les heures mensuelles, puis divisez le salaire mensuel par ce nombre.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Comment calculer un salaire horaire net à partir du brut ?</button>
+      <div class="faq-a"><p>Appliquez un taux de cotisations moyen (environ 22 à 25 %) à votre taux horaire brut pour estimer le net.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Combien d'heures y a-t-il dans un mois ?</button>
+      <div class="faq-a"><p>Pour un temps plein de 35 heures par semaine, un mois compte en moyenne 151,67 heures.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Comment calculer un salaire horaire pour un temps partiel ?</button>
+      <div class="faq-a"><p>Indiquez vos heures hebdomadaires réelles à la place des 35 heures d'un temps plein.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Qu'est-ce que le taux horaire brut ?</button>
+      <div class="faq-a"><p>C'est le montant perçu par heure avant déduction des cotisations sociales et de l'impôt.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Qu'est-ce que le taux horaire net ?</button>
+      <div class="faq-a"><p>C'est le montant réellement perçu par heure, après déduction des cotisations sociales.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Comment calculer un salaire annuel en salaire horaire ?</button>
+      <div class="faq-a"><p>Divisez le salaire annuel par 12 pour obtenir le salaire mensuel, puis appliquez la formule de conversion en taux horaire.</p></div>
+    </div>
+    <div class="faq-item">
+      <button class="faq-q" aria-expanded="false" onclick="toggleFaq(this)">Le résultat du calcul de salaire horaire est-il exact ?</button>
+      <div class="faq-a"><p>Non, c'est une estimation. Un bulletin de salaire officiel dépend du contrat, des primes, des cotisations et des règles applicables.</p></div>
+    </div>
+  </div>
+</section>
+
+<section aria-labelledby="related-tools-title" class="section-compact">
+  <div class="section-head">
+    <h2 id="related-tools-title">D'autres outils de calcul sur CalcHeure</h2>
+    <p>Tous nos outils sont organisés en pages dédiées pour vous offrir une expérience claire et rapide.</p>
+  </div>
+  <div class="tools-grid">
+    <a href="/calcul-heures-travail/" class="tool-card">
+      <div class="tool-icon">⏱</div>
+      <h3>Calcul heures de travail</h3>
+      <p>Additionnez vos heures travaillées sur la semaine ou le mois.</p>
+    </a>
+    <a href="/convertisseur-minutes-heures/" class="tool-card">
+      <div class="tool-icon">🔄</div>
+      <h3>Convertisseur minutes heures</h3>
+      <p>Convertissez minutes, heures, secondes et jours entre eux.</p>
+    </a>
+    <a href="/calculer-un-pourcentage/" class="tool-card">
+      <div class="tool-icon">%</div>
+      <h3>Calculer un pourcentage</h3>
+      <p>Calculez un pourcentage, une augmentation ou une réduction rapidement.</p>
+    </a>
+    <a href="/difference-entre-deux-dates/" class="tool-card">
+      <div class="tool-icon">📅</div>
+      <h3>Différence entre deux dates</h3>
+      <p>Calculez le nombre de jours, mois ou années entre deux dates.</p>
+    </a>
+  </div>
+</section>
+
+<section aria-labelledby="article-title" class="section-compact article-block">
+  <h2 id="article-title">Guide complet du calcul de salaire horaire</h2>
+
+  <h3>Pourquoi calculer un salaire horaire ?</h3>
+  <p>Le salaire horaire permet de comparer des situations professionnelles exprimées dans des unités différentes : un salaire mensuel, un salaire annuel ou un tarif de mission freelance. Calculer un taux horaire donne une base commune pour évaluer une offre d'emploi, négocier une augmentation ou fixer un tarif de prestation.</p>
+
+  <h3>Qui a besoin de calculer un taux horaire ?</h3>
+  <p>Les salariés en recherche d'emploi comparent des offres exprimées en salaire mensuel ou annuel, les freelances fixent un tarif horaire cohérent avec un revenu cible, et les recruteurs comparent des candidats sur une base horaire commune, notamment lors du passage d'un temps plein à un temps partiel.</p>
+
+  <h3>Comment calculer un salaire horaire, étape par étape</h3>
+  <p>Le calcul repose sur deux données : le salaire mensuel et la durée de travail hebdomadaire. On convertit d'abord les heures hebdomadaires en heures mensuelles avec la formule heures × 52 ÷ 12, puis on divise le salaire mensuel par ce nombre d'heures pour obtenir le taux horaire.</p>
+
+  <table>
+    <thead><tr><th>Salaire mensuel</th><th>Heures / semaine</th><th>Taux horaire estimé</th></tr></thead>
+    <tbody>
+      <tr><td>2 000 €</td><td>35h</td><td>≈ 13,18 €</td></tr>
+      <tr><td>1 500 €</td><td>20h</td><td>≈ 17,31 €</td></tr>
+      <tr><td>3 000 €</td><td>39h</td><td>≈ 17,75 €</td></tr>
+      <tr><td>2 500 €</td><td>35h</td><td>≈ 16,48 €</td></tr>
+    </tbody>
+  </table>
+
+  <h3>Salaire horaire brut ou net : quelle différence ?</h3>
+  <p>Le taux horaire brut correspond au montant avant déduction des cotisations sociales, tandis que le taux horaire net reflète ce qui est réellement perçu. Pour estimer un salaire horaire net à partir du brut, on applique généralement un taux de cotisations d'environ 22 à 25 % pour un salarié non-cadre.</p>
+
+  <h3>Limites du calcul de salaire horaire</h3>
+  <p>Ce calcul de taux horaire reste une estimation. Il ne prend pas en compte les primes, les heures supplémentaires, les avantages en nature ni les spécificités de votre convention collective. Pour un montant exact, référez-vous toujours à votre bulletin de salaire officiel.</p>
+
+  <h3>Salaire horaire et calcul du temps de travail</h3>
+  <p>Ce calcul de salaire horaire se combine naturellement avec le <a href="/calcul-heures-travail/">calcul heures de travail</a> pour estimer une rémunération à partir d'horaires réels, ou avec le <a href="/convertisseur-minutes-heures/">convertisseur minutes heures</a> pour convertir des heures décimales avant de calculer un taux horaire.</p>
+</section>
+
+<section class="section-compact footer-cta">
+  <h2>Besoin d'un autre calcul ?</h2>
+  <p>Découvrez toutes nos calculatrices gratuites pour les heures, les salaires, les pourcentages et les calculs professionnels.</p>
+  <a href="/#outils" class="btn btn-primary">Découvrir tous les outils →</a>
+</section>
+
+<div class="container"><div class="ad-slot" style="display:none" id="annonces"><div>Emplacement publicitaire — AdSense après validation du site<br><small>Remplacez ce bloc par votre code Google AdSense quand le compte sera approuvé.</small></div></div></div>
+
+<section>
+  <div class="article-content">
+    <div class="author-box">
+      <div class="author-avatar">⏱</div>
+      <div>
+        <div class="author-name">Rédaction CalcHeure</div>
+        <div class="author-role">Contenu pratique sur le calcul des durées, les conversions et l'organisation du temps.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+<footer class="site-footer">
+  <div class="footer-grid">
+    <div class="footer-brand">
+      <div class="logo"><a href="/">⏱ CalcHeure</a></div>
+      <p>Calculatrice heure en ligne gratuite pour additionner, soustraire, convertir et mieux comprendre les durées.</p>
+    </div>
+    <div class="footer-col">
+      <h4>Outils</h4>
+      <ul><li><a href="/">Calcul heure</a></li>
+        <li><a href="/calcul-heures-travail/">Calcul heures de travail</a></li>
+        <li><a href="/convertisseur-minutes-heures/">Convertisseur minutes heures</a></li>
+        <li><a href="/salaire-horaire/">Salaire horaire</a></li>
+        <li><a href="/difference-entre-deux-dates/">Différence entre deux dates</a></li>
+        <li><a href="/feuille-de-presence/">Feuille de présence</a></li>
+        <li><a href="/calculer-un-pourcentage/">Calculer un pourcentage</a></li>
+        <li><a href="/calcul-frais-kilometrique/">Calcul frais kilométrique</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>Articles</h4>
+       <ul><li><a href="/blog/calcul-heures-travail/">Calcul des heures de travail</a></li>
+        <li><a href="/blog/convertir-minutes-heures/">Convertir minutes en heures</a></li>
+        <li><a href="/blog/gestion-du-temps-freelance/">Gestion du temps freelance</a></li>
+        <li><a href="/blog/taux-horaire-net-brut/">Taux horaire net à partir du brut</a></li>
+        <li><a href="/blog/calcul-heures-nuit/">Calcul heures de nuit</a></li>
+        <li><a href="/blog/calcul-heures-supplementaires/">Calcul des heures supplémentaires</a></li>
+        <li><a href="/blog/calcul-pause-repas/">Calcul pause repas</a></li></ul>
+    </div>
+    <div class="footer-col">
+      <h4>Confiance</h4>
+      <ul>
+        <li><a href="/a-propos/">À propos</a></li>
+        <li><a href="/contact/">Contact</a></li>
+        <li><a href="/politique-confidentialite/">Confidentialité</a></li>
+      </ul>
+    </div>
+    <div class="footer-col">
+      <h4> </h4>
+      <ul>
+        <li><a href="/#annonces"> </a></li>
+        <li><a href="/#faq"> </a></li>
+        <li><a href="/blog/"> </a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="footer-bottom">
+    <p>© 2026 CalcHeure. Calculatrice heure gratuite en ligne. Tous droits réservés.</p>
+    <div class="footer-links">
+      <a href="/politique-confidentialite/">Confidentialité</a>
+      <a href="/sitemap.xml">Plan du site</a>
+    </div>
+  </div>
+</footer>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<script src="/assets/js/app.js" defer></script>
+<script>
+  function toggleFaq(btn) {
+    var isOpen = btn.getAttribute('aria-expanded') === 'true';
+    document.querySelectorAll('.faq-q').forEach(function(b) {
+      b.setAttribute('aria-expanded', 'false');
+      b.closest('.faq-item').classList.remove('open');
+    });
+    if (!isOpen) {
+      btn.setAttribute('aria-expanded', 'true');
+      btn.closest('.faq-item').classList.add('open');
+    }
+  }
+</script>
+</body>
+</html>
