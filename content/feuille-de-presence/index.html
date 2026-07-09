@@ -3,22 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Feuille de Présence | Calcul des Heures de la Semaine</title>
-  <meta name="description" content="Additionnez vos heures travaillées par jour et obtenez un total hebdomadaire clair en heures et minutes.">
+  <title>Feuille de Présence & Calcul Horaire | Calculatrice Heures de la Semaine</title>
+  <meta name="description" content="Calculatrice pour heure gratuite : additionnez vos heures travaillées (calcul horaire) par jour, obtenez un total hebdomadaire et générez une feuille de présence mensuelle à télécharger en CSV. La calculette heure la plus simple pour calculer les heures et estimer votre taux horaire.">
   <meta name="robots" content="index,follow">
   <meta name="theme-color" content="#0d1117">
-  <link rel="canonical" href="https://heurejour.com/feuille-de-presence/">
+  <link rel="canonical" href="https://www.heurejour.com/feuille-de-presence/">
   <meta property="og:type" content="website">
-<meta property="og:locale" content="fr_FR">
-  <meta property="og:title" content="Feuille de Présence | Calcul des Heures de la Semaine">
-  <meta property="og:description" content="Additionnez vos heures travaillées par jour et obtenez un total hebdomadaire clair en heures et minutes.">
-  <meta property="og:url" content="https://heurejour.com/feuille-de-presence/">
+  <meta property="og:locale" content="fr_FR">
+  <meta property="og:title" content="Feuille de Présence & Calcul Horaire | Calculatrice Heures de la Semaine">
+  <meta property="og:description" content="Additionnez vos heures travaillées par jour (calcul horaire), obtenez un total hebdomadaire clair et générez une feuille de présence mensuelle téléchargeable en CSV.">
+  <meta property="og:url" content="https://www.heurejour.com/feuille-de-presence/">
   <meta property="og:site_name" content="CalcHeure">
   <meta property="og:image" content="https://www.heurejour.com/og-image.png">
   <meta name="twitter:card" content="summary_large_image">
-  <meta name="twitter:title" content="Feuille de Présence | Calcul des Heures de la Semaine">
-  <meta name="twitter:description" content="Additionnez vos heures travaillées par jour et obtenez un total hebdomadaire clair en heures et minutes.">
- <link rel="icon" href="/favicon.svg" type="image/svg+xml">
+  <meta name="twitter:title" content="Feuille de Présence & Calcul Horaire | Calculatrice Heures de la Semaine">
+  <meta name="twitter:description" content="Calculatrice pour heure gratuite : calcul horaire quotidien, total hebdomadaire et feuille de présence mensuelle à télécharger en CSV.">
+  <link rel="icon" href="/favicon.svg" type="image/svg+xml">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
   <link rel="shortcut icon" href="/favicon.ico">
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
@@ -26,7 +26,92 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;600;700;800&display=swap">
   <link rel="stylesheet" href="/assets/css/style.css">
-  
+
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      { "@type": "ListItem", "position": 1, "name": "Accueil", "item": "https://www.heurejour.com/" },
+      { "@type": "ListItem", "position": 2, "name": "Outils", "item": "https://www.heurejour.com/#outils" },
+      { "@type": "ListItem", "position": 3, "name": "Feuille de présence", "item": "https://www.heurejour.com/feuille-de-presence/" }
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Feuille de présence et calcul horaire - CalcHeure",
+    "applicationCategory": "BusinessApplication",
+    "operatingSystem": "Web",
+    "url": "https://www.heurejour.com/feuille-de-presence/",
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" },
+    "description": "Calculatrice pour heure gratuite permettant de calculer les heures travaillées par jour, d'obtenir un total hebdomadaire et de générer une feuille de présence mensuelle téléchargeable en CSV."
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Qu'est-ce qu'une feuille de présence ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Une feuille de présence est un document qui permet d'enregistrer, jour après jour, les heures d'arrivée et de départ d'une ou plusieurs personnes afin de calculer un total d'heures travaillées sur une semaine ou un mois." }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment calculer une heure travaillée ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Pour calculer une heure travaillée, soustrayez l'heure de début à l'heure de fin, puis retirez le temps de pause. Le résultat obtenu en heures et minutes peut ensuite être additionné aux autres jours pour obtenir le calcul horaire total de la semaine." }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment calculer les heures sur toute une semaine ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Additionnez le nombre d'heures et de minutes de chaque jour travaillé. Dès que le total des minutes dépasse 60, convertissez-le en heures supplémentaires. Notre calculatrice pour heure automatise ce calcul et affiche le total en heures/minutes et en heures décimales." }
+      },
+      {
+        "@type": "Question",
+        "name": "Qu'est-ce que le calcul horaire et pourquoi est-il utile ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Le calcul horaire consiste à convertir des durées travaillées en un total exploitable, notamment pour la paie, la facturation freelance ou le suivi du temps de travail. Il évite les erreurs liées à la base 60 des heures et minutes." }
+      },
+      {
+        "@type": "Question",
+        "name": "Comment estimer mon taux horaire ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Le taux horaire s'obtient en divisant un salaire (mensuel ou annuel) par le nombre d'heures travaillées sur la même période. Notre outil dédié Salaire horaire réalise ce calcul automatiquement." }
+      },
+      {
+        "@type": "Question",
+        "name": "Cette calculette heure est-elle gratuite ?",
+        "acceptedAnswer": { "@type": "Answer", "text": "Oui, cette calculatrice pour heure et le générateur de feuille de présence mensuelle sont entièrement gratuits, sans inscription, et fonctionnent directement dans votre navigateur." }
+      }
+    ]
+  }
+  </script>
+
+  <style>
+    .monthly-gen{border:1px solid rgba(127,127,127,.25);border-radius:14px;padding:1.5rem;margin-top:1.5rem}
+    .monthly-gen .mg-controls{display:flex;flex-wrap:wrap;gap:1rem;margin-bottom:1rem}
+    .monthly-gen .mg-field{display:flex;flex-direction:column;gap:.35rem;min-width:150px}
+    .monthly-gen .mg-field label{font-size:.85rem;font-weight:600;opacity:.85}
+    .monthly-gen input[type="text"],
+    .monthly-gen input[type="number"],
+    .monthly-gen select{padding:.5rem .65rem;border-radius:8px;border:1px solid rgba(127,127,127,.35);background:transparent;color:inherit;font-size:.95rem}
+    .monthly-gen .mg-checks{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;margin:.75rem 0 1rem}
+    .monthly-gen .mg-checks label{display:flex;align-items:center;gap:.4rem;font-size:.9rem}
+    .monthly-gen .mg-actions{display:flex;flex-wrap:wrap;gap:.6rem;margin-bottom:1rem}
+    .monthly-gen .mg-btn{padding:.55rem 1rem;border-radius:8px;border:1px solid rgba(127,127,127,.35);background:transparent;color:inherit;cursor:pointer;font-weight:600;font-size:.9rem}
+    .monthly-gen .mg-btn.primary{background:#635bff;border-color:#635bff;color:#fff}
+    .monthly-gen .mg-table-wrap{overflow-x:auto;border:1px solid rgba(127,127,127,.25);border-radius:10px}
+    .monthly-gen table{border-collapse:collapse;width:100%;font-size:.85rem}
+    .monthly-gen th,.monthly-gen td{border:1px solid rgba(127,127,127,.2);padding:.4rem .5rem;text-align:center;white-space:nowrap}
+    .monthly-gen th.emp-col,.monthly-gen td.emp-col{text-align:left;position:sticky;left:0;background:var(--card-bg,#0d1117);min-width:150px}
+    .monthly-gen td.weekend,.monthly-gen th.weekend{background:rgba(99,91,255,.12)}
+    .monthly-gen select.status-select{padding:.2rem;font-size:.8rem;border-radius:6px}
+    .monthly-gen .mg-legend{font-size:.82rem;opacity:.8;margin-top:.75rem}
+    .monthly-gen .emp-name-input{width:100%;min-width:130px;border:none;background:transparent;color:inherit;font-size:.85rem}
+    @media (max-width:640px){.monthly-gen .mg-field{min-width:120px}}
+  </style>
 </head>
 <body>
 <a class="skip-link" href="#main-content">Aller au contenu principal</a>
@@ -59,14 +144,15 @@
 <main id="main-content">
 
 <div class="hero narrow">
-  <span class="hero-eyebrow">Outil présence</span>
-  <h1><span>Feuille de présence</span> hebdomadaire</h1>
-  <p>Additionnez les heures travaillées de la semaine pour obtenir un total en heures/minutes et en heures décimales.</p>
+  <span class="hero-eyebrow">Outil présence & calcul horaire</span>
+  <h1><span>Feuille de présence</span> et calcul des heures de la semaine</h1>
+  <p>Additionnez les heures travaillées de la semaine pour obtenir un total en heures/minutes et en heures décimales, puis générez une feuille de présence mensuelle complète. Une calculatrice pour heure simple, pensée pour calculer les heures rapidement et sans erreur.</p>
 </div>
+
 <section class="section-compact">
   <div class="calc-box">
     <div class="calc-panel active">
-      <p class="panel-title">Total hebdomadaire</p>
+      <p class="panel-title">Total hebdomadaire — calcul horaire</p>
       <div class="time-rows"><div class="time-row timesheet-row">
   <span class="row-label">Lundi</span>
   <div class="time-inputs">
@@ -132,10 +218,90 @@
     </div>
   </div>
 </section>
+
+<section class="section-compact">
+  <div class="section-head">
+    <h2 id="generateur-mensuel">Générateur de feuille de présence mensuelle (CSV)</h2>
+    <p>Configurez le mois, ajoutez vos employés ou collègues, puis générez et téléchargez une feuille de présence mensuelle complète — idéale pour le suivi RH, le calcul horaire d'une équipe ou la préparation de la paie.</p>
+  </div>
+  <div class="monthly-gen">
+    <div class="mg-controls">
+      <div class="mg-field">
+        <label for="mg-org">Nom de l'organisation / équipe</label>
+        <input type="text" id="mg-org" placeholder="Ex : Mon entreprise">
+      </div>
+      <div class="mg-field">
+        <label for="mg-month">Mois</label>
+        <select id="mg-month">
+          <option value="0">Janvier</option><option value="1">Février</option><option value="2">Mars</option>
+          <option value="3">Avril</option><option value="4">Mai</option><option value="5">Juin</option>
+          <option value="6">Juillet</option><option value="7">Août</option><option value="8">Septembre</option>
+          <option value="9">Octobre</option><option value="10">Novembre</option><option value="11">Décembre</option>
+        </select>
+      </div>
+      <div class="mg-field">
+        <label for="mg-year">Année</label>
+        <input type="number" id="mg-year" min="2000" max="2100" value="2026">
+      </div>
+    </div>
+    <div class="mg-checks">
+      <label><input type="checkbox" id="mg-weekend" checked> Surligner les week-ends</label>
+      <label><input type="checkbox" id="mg-notes"> Ajouter une colonne Notes</label>
+    </div>
+    <div class="mg-actions">
+      <button type="button" class="mg-btn primary" onclick="mgGeneratePreview()">Générer l'aperçu</button>
+      <button type="button" class="mg-btn" onclick="mgAddEmployee()">+ Ajouter un employé</button>
+      <button type="button" class="mg-btn" onclick="mgDownloadCSV()">⬇ Télécharger le CSV</button>
+    </div>
+    <div class="mg-table-wrap" id="mg-table-wrap">
+      <p style="padding:1rem;opacity:.7">Configurez le mois ci-dessus puis cliquez sur « Générer l'aperçu » pour créer votre feuille de présence.</p>
+    </div>
+    <p class="mg-legend"><strong>Légende :</strong> P = Présent · A = Absent · C = Congé · R = Retard</p>
+  </div>
+</section>
+
 <section>
   <div class="article-content">
     <h2>Pourquoi additionner en heures/minutes ?</h2>
-    <p>Un total hebdomadaire en base 60 évite les erreurs de conversion. Par exemple, 7h45 sur cinq jours donne 38h45, pas 38,225 h.</p>
+    <p>Un total hebdomadaire en base 60 évite les erreurs de conversion. Par exemple, 7h45 sur cinq jours donne 38h45, pas 38,225 h. C'est tout l'intérêt d'une calculatrice pour heure fiable plutôt qu'un calcul manuel.</p>
+
+    <h2>Calcul horaire : la méthode pas à pas</h2>
+    <p>Pour calculer une heure travaillée, il suffit de soustraire l'heure de début à l'heure de fin, puis de retirer le temps de pause éventuel. Répétez l'opération pour chaque jour, puis additionnez les résultats afin d'obtenir votre calcul horaire hebdomadaire ou mensuel complet.</p>
+
+    <h2>Calculer les heures d'une équipe avec la feuille de présence mensuelle</h2>
+    <p>Le générateur ci-dessus permet de calculer les heures et le suivi de présence de plusieurs personnes en une seule fois. Ajoutez un employé, indiquez son statut jour par jour (Présent, Absent, Congé, Retard), puis téléchargez la feuille au format CSV compatible avec Excel et Google Sheets.</p>
+
+    <h2>Du calcul horaire au taux horaire</h2>
+    <p>Une fois votre total d'heures obtenu, vous pouvez aussi calculer votre taux horaire à partir d'un salaire mensuel ou annuel grâce à notre outil dédié. Cette calculette heure et l'outil de taux horaire fonctionnent parfaitement ensemble pour un suivi complet du temps de travail et de la rémunération.</p>
+
+    <h2 id="faq">Questions fréquentes</h2>
+    <div class="faq-list">
+      <details>
+        <summary>Qu'est-ce qu'une feuille de présence ?</summary>
+        <p>Une feuille de présence est un document qui permet d'enregistrer, jour après jour, les heures d'arrivée et de départ d'une ou plusieurs personnes afin de calculer un total d'heures travaillées sur une semaine ou un mois.</p>
+      </details>
+      <details>
+        <summary>Comment calculer une heure travaillée ?</summary>
+        <p>Soustrayez l'heure de début à l'heure de fin, puis retirez le temps de pause. Le résultat en heures et minutes s'additionne ensuite aux autres jours pour obtenir le calcul horaire total.</p>
+      </details>
+      <details>
+        <summary>Comment calculer les heures sur toute une semaine ?</summary>
+        <p>Additionnez le nombre d'heures et de minutes de chaque jour travaillé. Dès que le total des minutes dépasse 60, convertissez-le en heures supplémentaires. Notre calculatrice pour heure automatise ce calcul.</p>
+      </details>
+      <details>
+        <summary>Qu'est-ce que le calcul horaire et pourquoi est-il utile ?</summary>
+        <p>Le calcul horaire consiste à convertir des durées travaillées en un total exploitable, notamment pour la paie, la facturation freelance ou le suivi du temps de travail.</p>
+      </details>
+      <details>
+        <summary>Comment estimer mon taux horaire ?</summary>
+        <p>Le taux horaire s'obtient en divisant un salaire (mensuel ou annuel) par le nombre d'heures travaillées sur la même période. Notre outil Salaire horaire réalise ce calcul automatiquement.</p>
+      </details>
+      <details>
+        <summary>Cette calculette heure est-elle gratuite ?</summary>
+        <p>Oui, cette calculatrice pour heure et le générateur de feuille de présence mensuelle sont entièrement gratuits, sans inscription, et fonctionnent directement dans votre navigateur.</p>
+      </details>
+    </div>
+
 <section aria-labelledby="related-tools-title">
   <div class="section-head">
     <h2 id="related-tools-title">D'autres outils de calcul sur CalcHeure</h2>
@@ -154,7 +320,7 @@
     </a>
     <a href="/salaire-horaire/" class="tool-card">
       <div class="tool-icon">💰</div>
-      <h3>Salaire horaire</h3>
+      <h3>Salaire horaire & taux horaire</h3>
       <p>Convertissez un salaire annuel ou mensuel en taux horaire.</p>
     </a>
     <a href="/calculer-un-pourcentage/" class="tool-card">
@@ -228,5 +394,161 @@
 </footer>
 <div class="toast" id="toast" role="status" aria-live="polite"></div>
 <script src="/assets/js/app.js" defer></script>
+<script>
+(function(){
+  var DAY_ABBR = ["Di","Lu","Ma","Me","Je","Ve","Sa"];
+  var MONTH_NAMES = ["Janvier","Février","Mars","Avril","Mai","Juin","Juillet","Août","Septembre","Octobre","Novembre","Décembre"];
+  var mgEmployeeCount = 0;
+  var mgCurrentDays = 0;
+
+  window.mgAddEmployee = function(){
+    var tbody = document.getElementById("mg-tbody");
+    if(!tbody){ mgGeneratePreview(); tbody = document.getElementById("mg-tbody"); if(!tbody) return; }
+    mgEmployeeCount++;
+    var tr = document.createElement("tr");
+    var tdName = document.createElement("td");
+    tdName.className = "emp-col";
+    var input = document.createElement("input");
+    input.type = "text";
+    input.className = "emp-name-input";
+    input.placeholder = "Nom de l'employé";
+    input.value = "Employé " + mgEmployeeCount;
+    tdName.appendChild(input);
+    tr.appendChild(tdName);
+
+    for(var d = 1; d <= mgCurrentDays; d++){
+      var td = document.createElement("td");
+      var select = document.createElement("select");
+      select.className = "status-select";
+      ["P","A","C","R"].forEach(function(code){
+        var opt = document.createElement("option");
+        opt.value = code; opt.textContent = code;
+        select.appendChild(opt);
+      });
+      td.appendChild(select);
+      tr.appendChild(td);
+    }
+
+    if(document.getElementById("mg-notes").checked){
+      var tdNotes = document.createElement("td");
+      var notesInput = document.createElement("input");
+      notesInput.type = "text";
+      notesInput.style.width = "100%";
+      notesInput.style.border = "none";
+      notesInput.style.background = "transparent";
+      notesInput.style.color = "inherit";
+      tdNotes.appendChild(notesInput);
+      tr.appendChild(tdNotes);
+    }
+    tbody.appendChild(tr);
+  };
+
+  window.mgGeneratePreview = function(){
+    var monthIndex = parseInt(document.getElementById("mg-month").value, 10);
+    var year = parseInt(document.getElementById("mg-year").value, 10) || new Date().getFullYear();
+    var highlightWeekend = document.getElementById("mg-weekend").checked;
+    var includeNotes = document.getElementById("mg-notes").checked;
+    var daysInMonth = new Date(year, monthIndex + 1, 0).getDate();
+    mgCurrentDays = daysInMonth;
+    mgEmployeeCount = 0;
+
+    var table = document.createElement("table");
+    var thead = document.createElement("thead");
+    var trh = document.createElement("tr");
+    var thEmp = document.createElement("th");
+    thEmp.className = "emp-col";
+    thEmp.textContent = "Employé";
+    trh.appendChild(thEmp);
+
+    for(var d = 1; d <= daysInMonth; d++){
+      var dow = new Date(year, monthIndex, d).getDay();
+      var th = document.createElement("th");
+      var isWeekend = (dow === 0 || dow === 6);
+      if(highlightWeekend && isWeekend) th.className = "weekend";
+      th.innerHTML = d + "<br><small>" + DAY_ABBR[dow] + "</small>";
+      trh.appendChild(th);
+    }
+    if(includeNotes){
+      var thNotes = document.createElement("th");
+      thNotes.textContent = "Notes";
+      trh.appendChild(thNotes);
+    }
+    thead.appendChild(trh);
+    table.appendChild(thead);
+
+    var tbody = document.createElement("tbody");
+    tbody.id = "mg-tbody";
+    table.appendChild(tbody);
+
+    var wrap = document.getElementById("mg-table-wrap");
+    wrap.innerHTML = "";
+    var caption = document.createElement("p");
+    caption.style.padding = ".6rem .75rem 0";
+    caption.style.fontWeight = "600";
+    caption.textContent = (document.getElementById("mg-org").value || "Mon organisation") + " — " + MONTH_NAMES[monthIndex] + " " + year;
+    wrap.appendChild(caption);
+    wrap.appendChild(table);
+
+    mgAddEmployee();
+    mgAddEmployee();
+  };
+
+  window.mgDownloadCSV = function(){
+    var table = document.querySelector("#mg-table-wrap table");
+    if(!table){
+      mgGeneratePreview();
+      table = document.querySelector("#mg-table-wrap table");
+    }
+    var rows = [];
+    var headerCells = table.querySelectorAll("thead th");
+    var headerRow = [];
+    headerCells.forEach(function(th){
+      headerRow.push(th.textContent.replace(/\s+/g, " ").trim());
+    });
+    rows.push(headerRow);
+
+    var bodyRows = table.querySelectorAll("tbody tr");
+    bodyRows.forEach(function(tr){
+      var rowData = [];
+      var nameInput = tr.querySelector(".emp-name-input");
+      rowData.push(nameInput ? nameInput.value : "");
+      var selects = tr.querySelectorAll("select.status-select");
+      selects.forEach(function(sel){ rowData.push(sel.value); });
+      var notesInput = tr.querySelector("td:last-child input[type='text']:not(.emp-name-input)");
+      if(notesInput) rowData.push(notesInput.value);
+      rows.push(rowData);
+    });
+
+    var csv = rows.map(function(r){
+      return r.map(function(cell){
+        var c = String(cell).replace(/"/g, '""');
+        return /[",;\n]/.test(c) ? '"' + c + '"' : c;
+      }).join(";");
+    }).join("\n");
+
+    var monthIndex = parseInt(document.getElementById("mg-month").value, 10);
+    var year = document.getElementById("mg-year").value;
+    var filename = "feuille-de-presence-" + MONTH_NAMES[monthIndex].toLowerCase() + "-" + year + ".csv";
+
+    var blob = new Blob(["\uFEFF" + csv], { type: "text/csv;charset=utf-8;" });
+    var url = URL.createObjectURL(blob);
+    var a = document.createElement("a");
+    a.href = url;
+    a.download = filename;
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+    URL.revokeObjectURL(url);
+  };
+
+  document.addEventListener("DOMContentLoaded", function(){
+    var now = new Date();
+    var yearInput = document.getElementById("mg-year");
+    var monthSelect = document.getElementById("mg-month");
+    if(yearInput) yearInput.value = now.getFullYear();
+    if(monthSelect) monthSelect.value = now.getMonth();
+  });
+})();
+</script>
 </body>
 </html>
