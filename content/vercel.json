@@ -1,6 +1,18 @@
 {
   "cleanUrls": true,
   "trailingSlash": true,
+  "redirects": [
+    {
+      "source": "/calcul-heures-de-travail",
+      "destination": "/calcul-heures-travail",
+      "permanent": true
+    },
+    {
+      "source": "/calcul-heure",
+      "destination": "/calcul-heures-travail",
+      "permanent": true
+    }
+  ],
   "headers": [
     {
       "source": "/(.*)",
